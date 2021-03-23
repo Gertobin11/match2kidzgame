@@ -30,10 +30,14 @@ body {
     text-decoration-color: gold;
     margin-top: 20px;
 }
+#title h1 {
+    font-size: 2.5em;
+}
 
 #title h3 {
     margin-top: 20px;
     margin-bottom: 25px;
+    font-size: 2em;
 }
 
 .fa-puzzle-piece:before {
