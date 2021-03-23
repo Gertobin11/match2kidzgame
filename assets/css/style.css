@@ -2,12 +2,19 @@
 
 /*general stylings*/
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Mystery Quest', cursive;
     background-image: url(../images/blue-boards-with-colourful-blocks.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .hr-center {
@@ -22,6 +29,11 @@ body {
     font-weight: 600;
     text-decoration: underline;
     text-decoration-color: gold;
+    margin-top: 20px;
+}
+
+#title h3 {
+    margin-top: 20px;
 }
 
 .fa-puzzle-piece:before {
