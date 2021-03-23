@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Kranky&family=Mystery+Quest&display=swap');
+
+/*general stylings*/
+
+body {
+    font-family: 'Mystery Quest', cursive;
+    background-image: url(../images/blue-boards-with-colourful-blocks.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hr-center {
+    text-align: center;
+}
+
+/* title styling */
+
+#title {
+    font-family: 'Kranky', cursive;
+    color: whitesmoke;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: gold;
+}
+
+.fa-puzzle-piece:before {
+    color: gold;
+}
+ .fa-gamepad:before {
+     color: gold;
+ }
