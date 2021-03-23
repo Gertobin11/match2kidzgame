@@ -75,4 +75,15 @@ For the pararagraphs and other cont I have chosen [Mystery Quest](https://fonts.
 
 The Icons I used for this project are straightforward and I got them from [fontawesome](https://fontawesome.com/).
 
+**Colors**
 
+The colors I used were very basic, but kept with the theme and the background colour.
+
+* for the background I used a light blue background picture.
+* for the borders and text elements I used whitesmoke.
+* for the icons I used gold.
+
+### Wireframes
+
+For my wireframes I used [Balsamiq](https://balsamiq.com/wireframes/desktop/?os=win&gclid=CjwKCAiAxp-ABhALEiwAXm6IyV8YHkGFytprKnOnoi0yGg7QpPzpo7NLGpkNpaKh5Z5ypPynFnNNEhoCKOMQAvD_BwE#).
+I uploaded my wireframes to my assets folder and you can view them [here](https://github.com/Gertobin11/match2kidzgame/blob/master/assets/wireframes/wireframes.pdf)
