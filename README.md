@@ -1,45 +1,78 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+MATCH 2 KIDZ
+===
+A simple game of matching two cards by type or by colour.
+By using HTML, CSS and Javascript to give an enjoyble experience
+to kids and families while also being very easy to use.
+ The game focuses on getting the kids ability to interpret what they
+  see visually and on them being able to identify a corresponding
+ card. Their performance will be graded and they can replay
+  the game to try and achieve a better score.
 
-Welcome USER_NAME,
+CONTENTS
+---
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+.
+.
+.
+.
+..
+.
+..
+.
+.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## UX (User Experience)
+___
 
-`python3 -m http.server`
+### Project Goals
+The main goal of this project is to offer children an enjoyable experience 
+of a matching game while also developing their skills in problem solving, recognising patterns, seeing a card and remembering 
+where that card is positioned. 
 
-A blue button should appear to click: *Make Public*,
+### User Goals
+* Find out how to play the game.
+* Be able to start the game.
+* Replay the game.
+* Be able to contact the site owner 
 
-Another blue button should appear to click: *Open Browser*.
+### User Stories 
+* As a user I want to be able to start the game as fast as possible.
+* As a user I want to be able to see the rules and methods of how to play the game.
+* As a user I want to be able to contact the owner of the site for more information or to leave feedback.
+* As a user I want the site to be pleasant on the eye with nice backgrounds and appropriate typography.
+* As the parent of a user of the site I want the site to be easy to navigate, intuitive and easy for kids to learn.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Site Owner Goals
+* As the site owner I want to deliver a site that is fun and easy to use for kids.
+* As the site owner I want the game to be fun and also be able the users ability to identify and match objects and make them comfortable using the site,
+* As the site owner I want the users to be able to contact me easily via email to hear their opinions and leave feedback.
 
-A blue button should appear to click: *Make Public*,
+### User Requirements and Expectations 
+#### Requirements
+* All the buttons, including the matching card buttons work as expected.
+* The game works as the user intends and gives the user the appropriate feedback.
+* When the game is over, the game resets to the start.
 
-Another blue button should appear to click: *Open Browser*.
+#### Expectations
+* Well layed out website.
+* Nicely styled with contrasting fonts and background images.
+* All the user actions to be tracked and shown on screen.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Design Choices.
 
-## Updates Since The Instructional Video
+The design That I have chosen for this site is inspired by my kids preschool 
+and from all the games and books he they have.
+I have chosen a light blue background image with a fun type font to make it 
+fun friendly and inviting.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+**Fonts**
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The fonts I chose for this project both came from Google Fonts. For the title and headings I have chosen the style of [Kranky](https://fonts.google.com/specimen/Kranky?preview.text_type=custom).
+For the pararagraphs and other cont I have chosen [Mystery Quest](https://fonts.google.com/specimen/Mystery+Quest?preview.text_type=custom).
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+**Icons**
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The Icons I used for this project are straightforward and I got them from [fontawesome](https://fontawesome.com/).
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
