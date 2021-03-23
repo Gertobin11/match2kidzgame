@@ -14,7 +14,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
 
 .hr-center {
@@ -34,6 +33,7 @@ body {
 
 #title h3 {
     margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 .fa-puzzle-piece:before {
@@ -42,3 +42,30 @@ body {
  .fa-gamepad:before {
      color: gold;
  }
+
+
+/* gameboard and card stylings */
+
+.match-game {
+    border: 2px solid whitesmoke;
+    display: flex;
+    height: 480px;
+    width: 480px;
+    flex-wrap: wrap;
+}
+
+.match-card {
+    border: 2px solid gold;
+    height: 25%;
+    width: 25%;
+    position: relative;
+}
+
+.match-card img {
+    max-width: 100%;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+}
