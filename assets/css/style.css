@@ -207,6 +207,48 @@ h3 {
 }
 
 
+/* footer stylings */
+
+
+footer {
+    background-color: transparent;
+    color: whitesmoke;
+    margin-top: 60px;
+    bottom: 0;
+    width: 100vw;
+}
+
+.row {
+    margin: 0;
+}
+
+#thank-you {
+    padding-top: 15px;
+    text-align: center;
+}
+
+#thank-you p {
+    font-size: 0.8em;
+}
+
+#thank-you h5 {
+    font-family: 'Kranky', cursive;
+}
+
+#thank-you p a {
+    color: gold;
+    text-decoration: none;
+}
+
+
+.social-links {
+    color: gold;
+    font-size: 200%;
+    margin-left: 10px;
+}
+
+
+
 /* hover css */
 
 .hvr-sweep-to-right {
