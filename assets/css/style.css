@@ -16,6 +16,15 @@ body {
     background-size: cover;
 }
 
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .hr-center {
     text-align: center;
 }
@@ -69,7 +78,6 @@ body {
     border-radius: 0;
 }
 
-
 /* title styling */
 
 #title {
@@ -79,9 +87,6 @@ body {
     text-decoration: underline;
     text-decoration-color: gold;
     margin-top: 20px;
-}
-#title h1 {
-    font-size: 2.5em;
 }
 
 #title h3 {
@@ -96,6 +101,31 @@ body {
  .fa-gamepad:before {
      color: gold;
  }
+
+/* styling for the container and buttons in index */
+
+#game-menu {
+    text-align: center;
+}
+
+.container {
+    width: 60vw;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.button-col {
+position: relative;
+height: 200px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
 
 
 /* gameboard and card stylings */
