@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!--navbar taken from bootstrap but modified through my css file-->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -36,21 +37,36 @@
             </div>
         </nav>
     </header>
+    <!-- added a section where the user can easily click a button to take the user where he wants to go-->
     <section id="game-menu">
         <h3><i class="fas fa-puzzle-piece"></i>Welcome to Match2Kidz!!!<i class="fas fa-puzzle-piece"></i></h3>
         <div class="container">
-            <div class="row">
-                <div class="col-4 button-col">
-                    <button class="center" id="how-to-play"></button>
-                </div>
-                <div class="col-4 button-col">
-                    <button class="center" id="go-to-game"></button>
-                </div>
-                <div class="col-4 button-col">
-                    <button class="center" id="contact-us"></button>
-                </div>
-            </div>
+                    <button  class="hvr-sweep-to-right" data-toggle="modal" data-target="#how-to-modal" id="how-to-play">How To Play</button>
+                    <button  class="hvr-sweep-to-top" id="go-to-game">Play</button>
+                    <button  class="hvr-sweep-to-left" id="contact-us">Contact Us</button>
         </div>
+    </section>
+    <!--adding a modal so the how to play button triggers this which will display how to play and launch the game-->
+    <section>
+        <div class="modal fade" id="how-to-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
 
 

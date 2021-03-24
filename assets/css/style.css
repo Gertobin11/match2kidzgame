@@ -16,6 +16,7 @@ body {
     background-size: cover;
 }
 
+/* found a clever centering trick on https://www.w3schools.com/howto/howto_css_center_button.asp */
 .center {
   margin: 0;
   position: absolute;
@@ -109,15 +110,16 @@ body {
 }
 
 .container {
-    width: 60vw;
-    height: 200px;
+    width: 90vw;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.7);
+    min-width: 250px;
+    display: flex; 
+    justify-content: center;  
+    align-items: center;
+    margin-top: 40px;
 }
 
-.button-col {
-position: relative;
-height: 200px;
-}
 
 h3 {
     margin-top: 20px;
@@ -126,6 +128,38 @@ h3 {
     color: whitesmoke;
 }
 
+#how-to-play {
+    width: 90px;
+    background-color: whitesmoke;
+    color: dodgerblue;
+    display: block;
+}
+
+#how-to-play:hover {
+    color: whitesmoke;
+}
+
+#go-to-game {
+    width: 90px;
+    background-color: chartreuse;
+    color: darkorange;
+    display: block;
+}
+
+#go-to-game:hover {
+    color: chartreuse;
+}
+
+#contact-us {
+    width: 90px;
+    background-color: gold;
+    color: black;
+    display: block
+}
+
+#contact-us:hover {
+    color: gold;
+}
 
 
 /* gameboard and card stylings */
@@ -156,4 +190,183 @@ h3 {
     border: 4px outset gold;
     border-radius: 5%;
 
+}
+
+
+/* hover css */
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:lightskyblue;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+/* Sweep To Left */
+.hvr-sweep-to-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-left:hover, .hvr-sweep-to-left:focus, .hvr-sweep-to-left:active {
+  color: white;
+}
+.hvr-sweep-to-left:hover:before, .hvr-sweep-to-left:focus:before, .hvr-sweep-to-left:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: darkorange;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+  color: white;
+}
+.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+
+
+
+
+
+
+
+
+/*  media queries section   */
+
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    flex-flow: row-reverse;
+}
+}
+
+
+
+@media (min-width: 500px) {
+.container {
+    width: 450px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 250px;
+    display: flex; 
+    justify-content: center;  
+    align-items: center;
+    margin-top: 40px;
+
+}
+}
+
+@media (min-width: 500px) {
+#how-to-play {
+    margin: 0px 15px 0px 15px;
+}
+}
+
+@media (min-width: 500px) {
+#go-to-game {
+    margin: 0px 15px 0px 15px;
+}
+}
+
+@media (min-width: 500px) {
+#contact-us {
+    margin: 0px 15px 0px 15px;
+}
 }
