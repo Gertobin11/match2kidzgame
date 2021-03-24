@@ -20,6 +20,56 @@ body {
     text-align: center;
 }
 
+/* Navbar stylings */
+
+#brandlogo {
+    font-family: 'Kranky', cursive;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1.9em;
+    text-decoration: underline;
+    text-decoration-color: gold;
+}
+
+.fa-gamepad:before {
+    color: gold;
+}
+
+.bg-light {
+    background-color: transparent!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: whitesmoke;
+}
+
+.active {
+    text-decoration: underline;
+    padding-bottom: 0px;
+}
+
+    .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(280,	280,	280, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler {
+    border: 2px solid whitesmoke;
+}
+
+.navbar-light .navbar-toggler:focus {
+    box-shadow: none;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: whitesmoke;
+    border-radius: 0;
+}
+
+
 /* title styling */
 
 #title {
@@ -51,18 +101,19 @@ body {
 /* gameboard and card stylings */
 
 .match-game {
-    border: 2px solid whitesmoke;
+    border: 4px groove whitesmoke;
     display: flex;
     height: 480px;
     width: 480px;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .match-card {
-    border: 2px solid gold;
-    height: 25%;
-    width: 25%;
+    height: calc(25% - 10px);
+    width : calc(25% - 10px);
     position: relative;
+    margin: 5px;
 }
 
 .match-card img {
@@ -72,4 +123,7 @@ body {
 .card-front,
 .card-back {
     position: absolute;
+    border: 4px outset gold;
+    border-radius: 5%;
+
 }
