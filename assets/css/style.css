@@ -149,16 +149,16 @@ h3 {
   /* found a cool outline trick on https://stackoverflow.com/questions/57464935/font-outline-using-only-css */
 #go-to-game {
     width: 140px;
-    background-color: chartreuse;
+    background-color: darkgreen;
     color: darkorange;
     display: block;
     margin-top: 15px;
     font-family: 'Mystery Quest', cursive;
-    text-shadow: 0 0 1px whitesmoke, 0 0 1px whitesmoke, 0 0 1px whitesmoke, 0 0 1px whitesmoke;
+    text-shadow: 0 0 1px darkorange, 0 0 1px darkorange, 0 0 1px darkorange, 0 0 1px darkorange;
 }
 
 #go-to-game:hover {
-    color: chartreuse;
+    color: darkgreen;
 }
 
 #contact-us {
