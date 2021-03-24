@@ -247,7 +247,39 @@ footer {
     margin-left: 10px;
 }
 
+/* modal stylng */
 
+.modal-header {
+    background-color: deepskyblue;
+    color: whitesmoke;
+    font-family: 'Kranky', cursive;
+    border: 3px solid gold;
+}
+
+.modal-body {
+    background-color: whitesmoke;
+    color: deepskyblue;
+    font-family: 'Mystery Quest', cursive;
+}
+
+.modal-body h6 {
+    color: gold;
+}
+
+.modal-footer {
+    border: 3px solid gold;
+    background-color: deepskyblue;
+}
+
+.btn-secondary {
+    color: gold;
+    background-color: whitesmoke;
+    border-color: gold;
+}
+/* got the code from https://jsfiddle.net/cq9gm0jn/  */
+.yellow-close {
+  filter: invert(100%)sepia(50%)saturate(10000%)
+}
 
 /* hover css */
 

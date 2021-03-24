@@ -42,7 +42,8 @@
         <h3><i class="fas fa-puzzle-piece"></i>Welcome to Match2Kidz!!!<i class="fas fa-puzzle-piece"></i></h3>
         <div class="container">
             <h4>Choose An Option!
-                <button class="hvr-sweep-to-right" data-toggle="modal" data-target="#how-to-modal" id="how-to-play">How
+                <button class="hvr-sweep-to-right" data-bs-toggle="modal" data-bs-target="#howtomodal"
+                    id="how-to-play">How
                     To Play</button>
                 <button class="hvr-sweep-to-top" id="go-to-game">Play</button>
                 <button class="hvr-sweep-to-left" id="contact-us">Contact Us</button>
@@ -51,22 +52,33 @@
     </section>
     <!--adding a modal so the how to play button triggers this which will display how to play and launch the game-->
     <section>
-        <div class="modal fade" id="how-to-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
+
+        <!-- Modal -->
+        <div class="modal fade" id="howtomodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <h5 class="modal-title" id="staticBackdropLabel">How To Play</h5>
+                        <button type="button" class="btn-close yellow-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <h6>To Launch The Game</h6>
+                        <ul>
+                            <li>Click on the green play button</li>
+                            <li>Choose you difficulty</li>
+                            <li>Enjoy!!!</li>
+                        </ul>
+                        <h6>How To Play</h6>
+                        <ul>
+                            <li>Objective is to find all the maching pairs before the time runs out</li>
+                            <li>Pick 2 cards by clicking on them, the cards will be turned over</li>
+                            <li>If they match, the cards will be highlighted and then select 2 different cards</li>
+                            <li>If not then they will be turned back</li>
+                        </ul>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -99,6 +111,9 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
