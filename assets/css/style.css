@@ -128,22 +128,33 @@ h3 {
     color: whitesmoke;
 }
 
+.container h4 {
+    margin-bottom: 25px;
+    font-family: 'Kranky', cursive;
+    color: whitesmoke;
+}
+
 #how-to-play {
-    width: 90px;
+    width: 140px;
     background-color: whitesmoke;
     color: dodgerblue;
     display: block;
+    margin-top: 15px;
+    font-family: 'Mystery Quest', cursive;
 }
 
 #how-to-play:hover {
     color: whitesmoke;
 }
-
+  /* found a cool outline trick on https://stackoverflow.com/questions/57464935/font-outline-using-only-css */
 #go-to-game {
-    width: 90px;
+    width: 140px;
     background-color: chartreuse;
     color: darkorange;
     display: block;
+    margin-top: 15px;
+    font-family: 'Mystery Quest', cursive;
+    text-shadow: 0 0 1px whitesmoke, 0 0 1px whitesmoke, 0 0 1px whitesmoke, 0 0 1px whitesmoke;
 }
 
 #go-to-game:hover {
@@ -151,10 +162,13 @@ h3 {
 }
 
 #contact-us {
-    width: 90px;
+    width: 140px;
     background-color: gold;
     color: black;
-    display: block
+    display: block;
+    margin-top: 15px;
+    font-family: 'Mystery Quest', cursive;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
 
 #contact-us:hover {
@@ -355,18 +369,18 @@ h3 {
 
 @media (min-width: 500px) {
 #how-to-play {
-    margin: 0px 15px 0px 15px;
+    margin: 15px 0px 15px 0px;
 }
 }
 
 @media (min-width: 500px) {
 #go-to-game {
-    margin: 0px 15px 0px 15px;
+    margin: 15px 0px 15px 0px;
 }
 }
 
 @media (min-width: 500px) {
 #contact-us {
-    margin: 0px 15px 0px 15px;
+    margin: 15px 0px 15px 0px;
 }
 }
