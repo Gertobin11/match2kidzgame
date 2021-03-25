@@ -1,3 +1,4 @@
+// adding some javascript effect to make the footer easier to read when hovered over
 $("#thank-you").on("mouseover", mouseOver);
 $("#thank-you").on("mouseout", mouseOut);
 
@@ -11,6 +12,8 @@ function mouseOut() {
 }
 
 $(".card-back").on("click", borderIn);
+
+//adding an efect of clicking a button
 
 function borderIn() {
     $("img").css("border", "4px outset gold");
