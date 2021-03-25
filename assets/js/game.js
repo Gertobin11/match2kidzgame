@@ -6,7 +6,7 @@ let cards = document.getElementsByClassName("match-card");
 
 //adding a function to turn the cards over
 function turnCard() {
-    console.log("hi");
+    this.classList.toggle("flip");
 }
 
 

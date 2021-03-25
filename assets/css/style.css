@@ -201,6 +201,7 @@ a, a:hover, a:focus, a:active {
     width: 480px;
     flex-wrap: wrap;
     margin: auto;
+    perspective: 1100px;
 }
 
 .match-card {
@@ -208,10 +209,16 @@ a, a:hover, a:focus, a:active {
     width : calc(25% - 10px);
     position: relative;
     margin: 5px;
+    transform-style: preserve-3d;
+    transition: .6s;
 }
 
 .match-card img {
     max-width: 100%;
+}
+
+.match-card.flip {
+    transform: rotateY(-180deg);
 }
 
 .card-front,
