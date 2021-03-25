@@ -1,11 +1,11 @@
-document.getElementById("thank-you").addEventListener("mouseover", mouseOver);
-document.getElementById("thank-you").addEventListener("mouseout", mouseOut);
+$("#thank-you").on("mouseover", mouseOver);
+$("#thank-you").on("mouseout", mouseOut);
 
 
 function mouseOver() {
-  document.getElementById("thank-you").style.backgroundColor = "black";
+ $("#thank-you").css("background-color", "black")
 }
 
 function mouseOut() {
-  document.getElementById("thank-you").style.backgroundColor = "transparent";
+  $("#thank-you").css("background-color", "transparent");
 }
