@@ -92,7 +92,7 @@ body {
 
 #title h3 {
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     font-size: 2em;
 }
 
@@ -123,7 +123,7 @@ body {
 
 h3 {
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     font-size: 2em;
     color: whitesmoke;
 }
@@ -139,8 +139,11 @@ h3 {
     background-color: whitesmoke;
     color: dodgerblue;
     display: block;
+    margin: auto;
     margin-top: 15px;
     font-family: 'Mystery Quest', cursive;
+    height: 45px;
+    font-size: 0.9em;
 }
 
 #how-to-play:hover {
@@ -152,9 +155,12 @@ h3 {
     background-color: darkgreen;
     color: darkorange;
     display: block;
+    margin: auto;
     margin-top: 15px;
     font-family: 'Mystery Quest', cursive;
     text-shadow: 0 0 1px darkorange, 0 0 1px darkorange, 0 0 1px darkorange, 0 0 1px darkorange;
+    height: 45px;
+    font-size: 0.9em;
 }
 
 #go-to-game:hover {
@@ -166,9 +172,12 @@ h3 {
     background-color: gold;
     color: black;
     display: block;
+    margin: auto;
     margin-top: 15px;
     font-family: 'Mystery Quest', cursive;
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    height: 45px;
+    font-size: 0.9em;
 }
 
 #contact-us:hover {
@@ -231,7 +240,6 @@ footer {
 #thank-you {
     padding: 0px;
     text-align: center;
-    margin: 0px;
     max-width: 100vw;
 }
 
@@ -242,6 +250,7 @@ footer {
 
 #thank-you h5 {
     font-family: 'Kranky', cursive;
+    margin-top: 20px;
 }
 
 #thank-you p a {
@@ -290,7 +299,7 @@ footer {
   filter: invert(100%)sepia(50%)saturate(10000%)
 }
 
-/* hover css */
+/* hover css , took the below button hover effects from https://ianlunn.github.io/Hover/*/
 
 .hvr-sweep-to-right {
   display: inline-block;
@@ -452,24 +461,42 @@ footer {
 
 @media (min-width: 500px) {
 #how-to-play {
-    margin: 15px 0px 15px 0px;
+    margin: auto;
+    margin-top: 15px;
 }
 }
 
 @media (min-width: 500px) {
 #go-to-game {
-    margin: 15px 0px 15px 0px;
+    margin: auto;
+    margin-top: 15px;
 }
 }
 
 @media (min-width: 500px) {
 #contact-us {
-    margin: 15px 0px 15px 0px;
+    margin: auto;
+    margin-top: 15px;
 }
 }
 
 @media (min-width: 500px) {
 footer {
     margin-top: 120px;
+}
+}
+
+@media (max-width: 500px) {
+.match-game {
+    width: 240px;
+    height: 750px;
+}
+}
+
+@media (max-width: 500px) {
+.match-card {
+    height: calc(9% - 10px);
+    width : calc(50% - 10px);
+    position: relative;
 }
 }
