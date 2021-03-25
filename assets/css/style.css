@@ -226,9 +226,12 @@ a, a:hover, a:focus, a:active {
     position: absolute;
     border: 4px outset gold;
     border-radius: 5%;
-
+    backface-visibility: hidden;
 }
 
+.card-front {
+    transform: rotateY(-180deg);
+}
 
 /* footer stylings */
 
