@@ -9,3 +9,11 @@ function mouseOver() {
 function mouseOut() {
   $("#thank-you").css("background-color", "transparent");
 }
+
+$(".card-back").on("click", borderIn);
+
+function borderIn() {
+    $("img").css("border", "4px outset gold");
+    $(this).css("border", "4px inset gold")
+    
+}
