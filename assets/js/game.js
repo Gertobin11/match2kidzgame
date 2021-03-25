@@ -4,9 +4,28 @@ let matchGame = $("#match-game");
 
 let cards = document.getElementsByClassName("match-card");
 
+//declaring variables and an array to put values on the selected cards and push them into an array
+let turnedCard = false;
+let firstCard;
+let secondCard;
+let selectedCards = [];
+//creating an array for pushing the selected pairs to if they match so if matched pairs length === cards length game won
+let matchedPairs = [];
 //adding a function to turn the cards over
 function turnCard() {
     this.classList.toggle("flip");
+    
+    if(!turnedCard) {
+        turnedCard = true;
+        firstCard = this;
+        selectedCards.push(this);
+    }
+    else {
+        turnedCard = false;
+        secondCard = this;
+        selectedCards.push(this);
+    }
+    console.log(selectedCards);
 }
 
 
