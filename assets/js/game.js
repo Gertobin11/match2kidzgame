@@ -18,6 +18,7 @@ let lockBoard = false;
 
 //adding a function to turn the cards over
 function turnCard() {
+    if(this === firstCard) return;
     if(lockBoard) return;
     this.classList.toggle("flip");
     
