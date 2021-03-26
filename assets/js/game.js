@@ -43,7 +43,6 @@ for (let i = 0; i < cards.length; i++) {
 function checkForMatch() {
     if(selectedCards[0].dataset.card === selectedCards[1].dataset.card) {
         matchedPairs.push(selectedCards[0], selectedCards[1]);
-        matchedPairs.push(secondCard);
         firstCard.removeEventListener("click", turnCard)
         secondCard.removeEventListener("click", turnCard)
         console.log(matchedPairs)
