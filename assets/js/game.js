@@ -9,10 +9,16 @@ let turnedCard = false;
 let firstCard;
 let secondCard;
 let selectedCards = [];
+
 //creating an array for pushing the selected pairs to if they match so if matched pairs length === cards length game won
 let matchedPairs = [];
+
+//adding a variable for locking the board as turning multiple cards was causing a bug got the technique from https://www.youtube.com/watch?v=ZniVgo8U7ek
+let lockBoard = false;
+
 //adding a function to turn the cards over
 function turnCard() {
+    if(lockBoard) return;
     this.classList.toggle("flip");
     
     if(!turnedCard) {
@@ -21,6 +27,7 @@ function turnCard() {
         selectedCards.push(this);
     }
     else {
+        lockBoard = true;
         turnedCard = false;
         secondCard = this;
         selectedCards.push(this);
@@ -47,10 +54,23 @@ function checkForMatch() {
         secondCard.removeEventListener("click", turnCard)
         console.log(matchedPairs)
         selectedCards.length = 0;
+        lockBoard = false;
         
 
     }
+    //added code for if it doesnt match it will return the cards and empty the selectedCars array, also had to ser a timeout fuction to make it work properly
     else{
-        console.log("no")
+        lockBoard = true;
+        setTimeout(() => {
+        firstCard.classList.toggle("flip");
+        secondCard.classList.toggle("flip");
+        selectedCards.length = 0;
+        lockBoard = false;
+        }, 1100);
     }
 }
+
+
+
+
+
