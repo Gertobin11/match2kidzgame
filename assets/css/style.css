@@ -137,7 +137,7 @@ h3 {
 #how-to-play {
     width: 140px;
     background-color: whitesmoke;
-    color: dodgerblue;
+    color: blue;
     display: block;
     margin: auto;
     margin-top: 15px;
@@ -233,6 +233,16 @@ a, a:hover, a:focus, a:active {
     transform: rotateY(-180deg);
 }
 
+/* styling for the timer */
+
+#timer {
+    width: 100%;
+}
+
+#timer-span {
+    color: whitesmoke;
+}
+
 /* styling of the difficulty buttons */
 
 #easy {
@@ -242,6 +252,12 @@ a, a:hover, a:focus, a:active {
     margin-top: 15px;
     font-size: 0.9em;
     font-family: 'Mystery Quest', cursive;
+    background-color: whitesmoke;
+    color: blue;
+}
+
+#easy:hover {
+    color: whitesmoke;
 }
 
 #medium {
@@ -251,6 +267,11 @@ a, a:hover, a:focus, a:active {
     margin-top: 15px;
     font-size: 0.9em;
     font-family: 'Mystery Quest', cursive;
+    background-color: darkgreen;
+    color: darkorange;
+}
+#medium:hover {
+    color: darkgreen;
 }
 
 #hard {
@@ -260,6 +281,12 @@ a, a:hover, a:focus, a:active {
     margin-top: 15px;
     font-size: 0.9em;
     font-family: 'Mystery Quest', cursive;
+    background-color: gold;
+    color: black;
+}
+
+#hard:hover {
+    color: gold;
 }
 
 /* footer stylings */
@@ -307,36 +334,89 @@ footer {
 /* modal stylng */
 
 .modal-header {
-    background-color: deepskyblue;
+    width: 100%;
+    margin: auto;
+    background-color: blue;
     color: whitesmoke;
     font-family: 'Kranky', cursive;
     border: 3px solid gold;
 }
 
+.modal-header h5 {
+    font-weight: 600;
+}
+
 .modal-body {
+    margin: 0 auto;
     background-color: whitesmoke;
-    color: deepskyblue;
+    color: blue;
     font-family: 'Mystery Quest', cursive;
 }
 
 .modal-body h6 {
-    color: gold;
+    color:darkorange;
 }
 
 .modal-footer {
     border: 3px solid gold;
-    background-color: deepskyblue;
+    background-color: blue;
 }
 
 .btn-secondary {
-    color: gold;
+    color: darkorange;
     background-color: whitesmoke;
-    border-color: gold;
+    border-color: darkorange;
 }
 /* got the code from https://jsfiddle.net/cq9gm0jn/  */
 .yellow-close {
   filter: invert(100%)sepia(50%)saturate(10000%)
 }
+
+/* adding styling to the buttons on the game won modal */
+#modal-easy {
+    font-family: 'Mystery Quest', cursive;
+    background-color: whitesmoke;
+    color: blue;
+}
+
+#modal-easy:hover {
+    color: whitesmoke;
+}
+
+#modal-medium {
+    font-family: 'Mystery Quest', cursive;
+    background-color: darkgreen;
+    color: darkorange;
+}
+
+#modal-medium:hover {
+    color: darkgreen;
+}
+
+
+#modal-hard {
+    font-family: 'Mystery Quest', cursive;
+    background-color: gold;
+    color: black;
+}
+
+#modal-hard:hover {
+    color: gold;
+}
+
+
+#modal-home {
+    font-family: 'Mystery Quest', cursive;
+    background-color: black;
+    color: lightseagreen;
+}
+
+#modal-home:hover {
+    background-color:lightseagreen;
+    color: black;
+}
+
+
 
 /* hover css , took the below button hover effects from https://ianlunn.github.io/Hover/*/
 
@@ -360,7 +440,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background:lightskyblue;
+  background: blue;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;

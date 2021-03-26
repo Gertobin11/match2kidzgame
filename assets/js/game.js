@@ -1,5 +1,25 @@
 //I will be using a mix of both javascript and jQuery for this as I feel more competent doing certain things in each
-document.getElementById("easy").addEventListener("click", shuffle)
+
+// adding script to hide the memory game until called for
+$(document).ready(function() {
+    $("#match-game").hide();
+})
+ //adding script to start my easy game mode
+let easyGame = document.getElementById("easy");
+
+function easyGameStart() {
+    shuffle();
+    $("#match-game").show();
+    selectedCards = [];
+    matchedPairs = [];
+    lockBoard = false;
+    $("#title").hide();
+    easyGameTimer();
+}
+
+document.getElementById("easy").addEventListener("click", easyGameStart);
+
+//document.getElementById("easy").addEventListener("click", shuffle)
 
 let cards = document.getElementsByClassName("match-card");
 
@@ -64,6 +84,7 @@ function checkForMatch() {
         console.log(matchedPairs)
         selectedCards.length = 0;
         lockBoard = false;
+        checkGameWon();
 
 
     }
@@ -79,7 +100,28 @@ function checkForMatch() {
     }
 }
 
+function checkGameWon() {
+    if(matchedPairs.length === 16) {
+        $("#game-won").modal("show");
+    }
+}
 
+// I got the outline of the timer code from here https://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer and added it to a function
+function easyGameTimer(){
+let count=90;
+let counter=setInterval(timer, 1000);
+function timer()
+{
+  count=count-1;
+  if (count <= 0)
+  {
+     clearInterval(counter);
+     return;
+  }
+
+ document.getElementById("time-span").innerHTML=count + " secs"; 
+}
+}
     
 
 

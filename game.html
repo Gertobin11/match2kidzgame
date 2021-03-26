@@ -49,6 +49,7 @@
     </section>
     <section id="game-area">
         <div class="match-game" id="match-game">
+            <div id="timer"><h3>Time Remaining : <span id="time-span"></span></h3></div>
             <div class="match-card" data-card="beaver">
                 <img class="card-front" src="assets/images/beaver-match.png" alt="beaver-image">
                 <img class="card-back" src="assets/images/match2kidz-cardback.png" alt="match2kidz logo">
@@ -115,6 +116,30 @@
             </div>
         </div>
     </section>
+
+<!-- Modal from bootstrap for game won-->
+<div class="modal fade" id="game-won" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"><i class="far fa-laugh-beam"></i> Congradulations!!! <i class="far fa-laugh-beam"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <h6>You have successfully completes the game.</h6>
+          <p>Choose an option from below to continue.</p>
+          <button type="button" id="modal-easy" class="btn btn-success hvr-sweep-to-right">Easy</button>
+          <button type="button" id="modal-medium" class="btn btn-success hvr-sweep-to-top">Medium</button>
+          <button type="button" id="modal-hard" class="btn btn-success hvr-sweep-to-left">Hard</button>
+          <button type="button" id="modal-home" class="btn btn-success">Home</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
