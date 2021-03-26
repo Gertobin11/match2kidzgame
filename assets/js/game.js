@@ -1,5 +1,7 @@
 //I will be using a mix of both javascript and jQuery for this as I feel more competent doing certain things in each
 
+
+
 let matchGame = $("#match-game");
 
 let cards = document.getElementsByClassName("match-card");
@@ -26,6 +28,7 @@ function turnCard() {
         turnedCard = true;
         firstCard = this;
         selectedCards.push(this);
+        shuffle();
     }
     else {
         lockBoard = true;
@@ -71,6 +74,14 @@ function checkForMatch() {
     }
 }
 
+function shuffle() {
+    let cardDeck =[];
+    for (let i = 0; i < cards.length; i++) {
+        cardDeck.push(cards[i]);
+    cardDeck = cardDeck.sort(() => Math.random() - 0.5)
+    }
+    console.log(cardDeck)
+}
 
 
 
