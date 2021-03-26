@@ -25,11 +25,33 @@ function turnCard() {
         secondCard = this;
         selectedCards.push(this);
     }
-    console.log(selectedCards);
+    
+    if(selectedCards.length === 2) {
+        checkForMatch(selectedCards[0], selectedCards[1])
+    }
+
 }
+    
 
 
 //adding an event listen for when the cards are chosen
 for (let i = 0; i < cards.length; i++) {
-    cards[i].addEventListener('click', turnCard);
+    cards[i].addEventListener("click", turnCard);
+}
+
+//going to write a function to check for a match
+function checkForMatch() {
+    if(selectedCards[0].dataset.card === selectedCards[1].dataset.card) {
+        matchedPairs.push(selectedCards[0], selectedCards[1]);
+        matchedPairs.push(secondCard);
+        firstCard.removeEventListener("click", turnCard)
+        secondCard.removeEventListener("click", turnCard)
+        console.log(matchedPairs)
+        selectedCards.length = 0;
+        
+
+    }
+    else{
+        console.log("no")
+    }
 }
