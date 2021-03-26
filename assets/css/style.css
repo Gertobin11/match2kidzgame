@@ -195,7 +195,7 @@ a, a:hover, a:focus, a:active {
 /* gameboard and card stylings */
 
 .match-game {
-    border: 4px groove whitesmoke;
+    border: none;
     display: flex;
     height: 480px;
     width: 480px;
@@ -231,6 +231,35 @@ a, a:hover, a:focus, a:active {
 
 .card-front {
     transform: rotateY(-180deg);
+}
+
+/* styling of the difficulty buttons */
+
+#easy {
+    display: block;
+    width: 140px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 0.9em;
+    font-family: 'Mystery Quest', cursive;
+}
+
+#medium {
+    display: block;
+    width: 140px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 0.9em;
+    font-family: 'Mystery Quest', cursive;
+}
+
+#hard {
+    display: block;
+    width: 140px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 0.9em;
+    font-family: 'Mystery Quest', cursive;
 }
 
 /* footer stylings */

@@ -1,5 +1,5 @@
 //I will be using a mix of both javascript and jQuery for this as I feel more competent doing certain things in each
-//document.getElementById("easy").addEventListener("click", shuffle)
+document.getElementById("easy").addEventListener("click", shuffle)
 
 let cards = document.getElementsByClassName("match-card");
 
@@ -40,14 +40,14 @@ function turnCard() {
 }
 
 // had to modify the shuffle from online tutorial , but the online tutorial wouldnt work so I added a for of loop which did the trick!!! video is here around the 32minute mark https://www.youtube.com/watch?v=ZniVgo8U7ek
-(function shuffle() {
+function shuffle() {
     let randomPos = Math.floor(Math.random() * 16)
     for(card of cards) {
         let randomPos = Math.floor(Math.random() * 16);
         card.style.order = randomPos;
     };
     console.log(randomPos);
-})();
+};
 
 
 //adding an event listen for when the cards are chosen
