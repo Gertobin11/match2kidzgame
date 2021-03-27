@@ -31,12 +31,26 @@ function mediumGameStart() {
     mediumGameTimer();
 }
 
+//starts hard game
+function hardGameStart() {
+    gameWon = false
+    shuffle();
+    $("#match-game").show();
+    selectedCards = [];
+    matchedPairs = [];
+    lockBoard = false;
+    $("#title").hide();
+    hardGameTimer();
+}
+
 // creating a variable to trigger the reset timer
 let gameWon = false;
 
 document.getElementById("easy").addEventListener("click", easyGameStart);
 
 document.getElementById("medium").addEventListener("click", mediumGameStart);
+
+document.getElementById("hard").addEventListener("click", hardGameStart);
 
 let cards = document.getElementsByClassName("match-card");
 
@@ -145,9 +159,26 @@ var counter;
             document.getElementById("time-span").innerHTML = count + " secs";
         }
     }
-
+// function to set the medium difficulty to 60 seconds
      function mediumGameTimer() {
       let  count = 60;
+
+     counter = setInterval(timer, 1000);
+        function timer() {
+            count = count - 1;
+            
+             if (count <= 0) {
+                $("#game-lost").modal("show");
+                window.clearInterval(counter);
+                resetBoard();
+            }
+            document.getElementById("time-span").innerHTML = count + " secs";
+        }
+    }
+
+// function to set the medium difficulty to 60 seconds
+     function hardGameTimer() {
+      let  count = 30;
 
      counter = setInterval(timer, 1000);
         function timer() {
