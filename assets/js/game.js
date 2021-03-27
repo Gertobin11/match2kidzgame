@@ -7,6 +7,7 @@ $(document).ready(function () {
 //adding script to start my easy game mode
 let easyGame = document.getElementById("easy");
 
+//starts easy game
 function easyGameStart() {
     gameWon = false
     shuffle();
@@ -18,12 +19,24 @@ function easyGameStart() {
     easyGameTimer();
 }
 
+//starts medium game
+function mediumGameStart() {
+    gameWon = false
+    shuffle();
+    $("#match-game").show();
+    selectedCards = [];
+    matchedPairs = [];
+    lockBoard = false;
+    $("#title").hide();
+    mediumGameTimer();
+}
+
 // creating a variable to trigger the reset timer
 let gameWon = false;
 
 document.getElementById("easy").addEventListener("click", easyGameStart);
 
-//document.getElementById("easy").addEventListener("click", shuffle)
+document.getElementById("medium").addEventListener("click", mediumGameStart);
 
 let cards = document.getElementsByClassName("match-card");
 
@@ -43,7 +56,7 @@ let lockBoard = false;
 function turnCard() {
     if (this === firstCard) return;
     if (lockBoard) return;
-    this.classList.toggle("flip");
+    this.classList.add("flip");
 
     if (!turnedCard) {
         turnedCard = true;
@@ -96,8 +109,8 @@ function checkForMatch() {
     else {
         lockBoard = true;
         setTimeout(() => {
-            firstCard.classList.toggle("flip");
-            secondCard.classList.toggle("flip");
+            firstCard.classList.remove("flip");
+            secondCard.classList.remove("flip");
             selectedCards.length = 0;
             lockBoard = false;
         }, 1100);
@@ -109,7 +122,6 @@ function checkGameWon() {
         $("#game-won").modal("show");
         window.clearInterval(counter);
         resetBoard();
-        easyGameStart();
         }
     }
 
@@ -119,7 +131,7 @@ var counter;
 
     // I got the outline of the timer code from here https://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer and added it to a function
     function easyGameTimer() {
-      let  count = 5;
+      let  count = 90;
 
      counter = setInterval(timer, 1000);
         function timer() {
@@ -129,7 +141,22 @@ var counter;
                 $("#game-lost").modal("show");
                 window.clearInterval(counter);
                 resetBoard();
-                easyGameStart();
+            }
+            document.getElementById("time-span").innerHTML = count + " secs";
+        }
+    }
+
+     function mediumGameTimer() {
+      let  count = 60;
+
+     counter = setInterval(timer, 1000);
+        function timer() {
+            count = count - 1;
+            
+             if (count <= 0) {
+                $("#game-lost").modal("show");
+                window.clearInterval(counter);
+                resetBoard();
             }
             document.getElementById("time-span").innerHTML = count + " secs";
         }
@@ -143,7 +170,7 @@ function resetBoard() {
         let cards = document.getElementsByClassName("match-card");
         for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", turnCard);
-        cards[i].classList.toggle("flip");
+        cards[i].classList.remove("flip");
 }
 }
 
