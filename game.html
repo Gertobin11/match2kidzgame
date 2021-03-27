@@ -135,7 +135,31 @@
           <button type="button" id="modal-home" class="btn btn-success">Home</button>
       </div>
       <div class="modal-footer">
-        <button id="game-win-close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button id="game-win-close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Play Again</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal from bootstrap for game won-->
+<div class="modal fade" id="game-lost" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="game-lost-modal"><i class="fas fa-sad-cry"></i> Sorry Time Ran Out !!! <i class="fas fa-sad-cry"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <h6>Better Luck Next Time</h6>
+          <p>Choose an option from below to continue.</p>
+          <button type="button" id="modal-easy-lose" class="btn btn-success hvr-sweep-to-right">Easy</button>
+          <button type="button" id="modal-medium-lose" class="btn btn-success hvr-sweep-to-top">Medium</button>
+          <button type="button" id="modal-hard-lose" class="btn btn-success hvr-sweep-to-left">Hard</button>
+          <button type="button" id="modal-home-lose" class="btn btn-success">Home</button>
+      </div>
+      <div class="modal-footer">
+        <button id="game-lose-close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Try Again</button>
         
       </div>
     </div>

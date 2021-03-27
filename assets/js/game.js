@@ -8,6 +8,7 @@ $(document).ready(function () {
 let easyGame = document.getElementById("easy");
 
 function easyGameStart() {
+    gameWon = false
     shuffle();
     $("#match-game").show();
     selectedCards = [];
@@ -16,6 +17,9 @@ function easyGameStart() {
     $("#title").hide();
     easyGameTimer();
 }
+
+// creating a variable to trigger the reset timer
+let gameWon = false;
 
 document.getElementById("easy").addEventListener("click", easyGameStart);
 
@@ -104,44 +108,44 @@ function checkGameWon() {
     if (matchedPairs.length === 12) {
         $("#game-won").modal("show");
         window.clearInterval(counter);
-        firstCard = null;
-        secondCard = null;
-        let cards = document.getElementsByClassName("match-card");
-        for (let i = 0; i < cards.length; i++) {
-        cards[i].addEventListener("click", turnCard);
-        cards[i].classList.toggle("flip");
+        resetBoard();
         easyGameStart();
         }
-
-
     }
-}
+
 
 
 var counter;
 
     // I got the outline of the timer code from here https://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer and added it to a function
     function easyGameTimer() {
-      let  count = 90;
+      let  count = 5;
 
      counter = setInterval(timer, 1000);
         function timer() {
             count = count - 1;
             
              if (count <= 0) {
+                $("#game-lost").modal("show");
                 window.clearInterval(counter);
-                count = 90
-                alert("hi");
+                resetBoard();
+                easyGameStart();
             }
-
-            else if (matchedPairs.length === 12) {
-                window.clearInterval(counter);
-            }
-
             document.getElementById("time-span").innerHTML = count + " secs";
         }
     }
 
+// creating a resetBoard function to tidy up the code
+
+function resetBoard() {
+        firstCard = null;
+        secondCard = null;
+        let cards = document.getElementsByClassName("match-card");
+        for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener("click", turnCard);
+        cards[i].classList.toggle("flip");
+}
+}
 
 
 
