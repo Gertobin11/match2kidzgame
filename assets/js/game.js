@@ -116,15 +116,15 @@ function checkGameWon() {
 
     }
 }
-var count = 90;
 
-var counter = setInterval(timer, 1000);
+
+var counter;
 
     // I got the outline of the timer code from here https://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer and added it to a function
     function easyGameTimer() {
-        var count = 90;
+      let  count = 90;
 
-var counter = setInterval(timer, 1000);
+     counter = setInterval(timer, 1000);
         function timer() {
             count = count - 1;
             
