@@ -608,13 +608,13 @@ footer {
 @media (max-width: 500px) {
 .match-game {
     width: 360px;
-    height: 750px;
+    height: 480px;
 }
 }
 
 @media (max-width: 500px) {
 .match-card {
-    height: calc(9% - 10px);
+    height: calc(25% - 10px);
     width : calc(33.33% - 10px);
     position: relative;
 }

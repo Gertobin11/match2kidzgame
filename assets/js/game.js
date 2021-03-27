@@ -1,10 +1,10 @@
 //I will be using a mix of both javascript and jQuery for this as I feel more competent doing certain things in each
 
 // adding script to hide the memory game until called for
-$(document).ready(function() {
+$(document).ready(function () {
     $("#match-game").hide();
 })
- //adding script to start my easy game mode
+//adding script to start my easy game mode
 let easyGame = document.getElementById("easy");
 
 function easyGameStart() {
@@ -61,9 +61,9 @@ function turnCard() {
 
 // had to modify the shuffle from online tutorial , but the online tutorial wouldnt work so I added a for of loop which did the trick!!! video is here around the 32minute mark https://www.youtube.com/watch?v=ZniVgo8U7ek
 function shuffle() {
-    let randomPos = Math.floor(Math.random() * 16)
-    for(card of cards) {
-        let randomPos = Math.floor(Math.random() * 16);
+    let randomPos = Math.floor(Math.random() * 12)
+    for (card of cards) {
+        let randomPos = Math.floor(Math.random() * 12);
         card.style.order = randomPos;
     };
     console.log(randomPos);
@@ -101,28 +101,47 @@ function checkForMatch() {
 }
 
 function checkGameWon() {
-    if(matchedPairs.length === 16) {
+    if (matchedPairs.length === 12) {
         $("#game-won").modal("show");
+        window.clearInterval(counter);
+        firstCard = null;
+        secondCard = null;
+        let cards = document.getElementsByClassName("match-card");
+        for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener("click", turnCard);
+        cards[i].classList.toggle("flip");
+        easyGameStart();
+        }
+
+
     }
 }
+var count = 90;
 
-// I got the outline of the timer code from here https://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer and added it to a function
-function easyGameTimer(){
-let count=90;
-let counter=setInterval(timer, 1000);
-function timer()
-{
-  count=count-1;
-  if (count <= 0)
-  {
-     clearInterval(counter);
-     return;
-  }
+var counter = setInterval(timer, 1000);
 
- document.getElementById("time-span").innerHTML=count + " secs"; 
-}
-}
-    
+    // I got the outline of the timer code from here https://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer and added it to a function
+    function easyGameTimer() {
+        var count = 90;
+
+var counter = setInterval(timer, 1000);
+        function timer() {
+            count = count - 1;
+            
+             if (count <= 0) {
+                window.clearInterval(counter);
+                count = 90
+                alert("hi");
+            }
+
+            else if (matchedPairs.length === 12) {
+                window.clearInterval(counter);
+            }
+
+            document.getElementById("time-span").innerHTML = count + " secs";
+        }
+    }
+
 
 
 
