@@ -25,12 +25,14 @@
                     <ul id="navbar-list" class="
                     navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="game.html">Game</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -49,7 +51,9 @@
     </section>
     <section id="game-area">
         <div class="match-game" id="match-game">
-            <div id="timer"><h3>Time Remaining : <span id="time-span"></span></h3></div>
+            <div id="timer">
+                <h3>Time Remaining : <span id="time-span"></span></h3>
+            </div>
             <!--Commented out 4 cards to display the game better on mobile in a 3 x 4 grid , as the inclusion of the timer pushed everything down-->
             <div class="match-card hidden" data-card="beaver">
                 <img class="card-front" src="assets/images/beaver-match.png" alt="beaver-image">
@@ -118,51 +122,59 @@
         </div>
     </section>
 
-<!-- Modal from bootstrap for game won-->
-<div class="modal fade" id="game-won" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel"><i class="far fa-laugh-beam"></i> Congradulations!!! <i class="far fa-laugh-beam"></i></h5>
-      </div>
-      <div class="modal-body hr hr-center">
-          <h6>You have successfully completed the game.</h6>
-          <p>Choose an option from below to continue.</p>
-          <button type="button" id="modal-easy" class="btn btn-success hvr-sweep-to-right">Easy</button>
-          <button type="button" id="modal-medium" class="btn btn-success hvr-sweep-to-top">Medium</button>
-          <button type="button" id="modal-hard" class="btn btn-success hvr-sweep-to-left">Hard</button>
-          <a href="index.html"><button type="button" id="modal-home" class="btn btn-success">Home</button></a>
-      </div>
-      <div class="modal-footer">
-        <button id="game-win-close" type="button" class="btn btn-secondary"><a href="game.html">Play Again?</a></button>
-        
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- Modal from bootstrap for game won-->
+    <div class="modal fade" id="game-won" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"><i class="far fa-laugh-beam"></i>
+                        Congradulations!!! <i class="far fa-laugh-beam"></i></h5>
+                </div>
+                <div class="modal-body hr hr-center">
+                    <h6>You have successfully completed the game.</h6>
+                    <p>Choose an option from below to continue.</p>
+                    <button type="button" id="modal-easy" class="btn btn-success hvr-sweep-to-right">Easy</button>
+                    <button type="button" id="modal-medium" class="btn btn-success hvr-sweep-to-top">Medium</button>
+                    <button type="button" id="modal-hard" class="btn btn-success hvr-sweep-to-left">Hard</button>
+                    <a href="index.html"><button type="button" id="modal-home" class="btn btn-success">Home</button></a>
+                </div>
+                <div class="modal-footer">
+                    <button id="game-win-close" type="button" class="btn btn-secondary"><a href="game.html">Play
+                            Again?</a></button>
 
-<!-- Modal from bootstrap for game lost-->
-<div class="modal fade" id="game-lost" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="game-lost-modal"><i class="fas fa-sad-cry"></i> Sorry Time Ran Out !!! <i class="fas fa-sad-cry"></i></h5>
-      </div>
-      <div class="modal-body hr-center">
-          <h6>Better Luck Next Time</h6>
-          <p>Choose an option from below to continue.</p>
-          <button type="button" id="modal-easy-lose" class="btn btn-success hvr-sweep-to-right">Easy</button>
-          <button type="button" id="modal-medium-lose" class="btn btn-success hvr-sweep-to-top">Medium</button>
-          <button type="button" id="modal-hard-lose" class="btn btn-success hvr-sweep-to-left">Hard</button>
-          <a href="index.html"><button type="button" id="modal-home-lose" class="btn btn-success">Home</button></a>
-      </div>
-      <div class="modal-footer">
-        <button id="game-lose-close" type="button" class="btn btn-secondary"><a href="game.html">Try Again?</a></button>
-      </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<footer>
+
+    <!-- Modal from bootstrap for game lost-->
+    <div class="modal fade" id="game-lost" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="game-lost-modal"><i class="fas fa-sad-cry"></i> Sorry Time Ran Out !!!
+                        <i class="fas fa-sad-cry"></i></h5>
+                </div>
+                <div class="modal-body hr-center">
+                    <h6>Better Luck Next Time</h6>
+                    <p>Choose an option from below to continue.</p>
+                    <button type="button" id="modal-easy-lose" class="btn btn-success hvr-sweep-to-right">Easy</button>
+                    <button type="button" id="modal-medium-lose"
+                        class="btn btn-success hvr-sweep-to-top">Medium</button>
+                    <button type="button" id="modal-hard-lose" class="btn btn-success hvr-sweep-to-left">Hard</button>
+                    <a href="index.html"><button type="button" id="modal-home-lose"
+                            class="btn btn-success">Home</button></a>
+                </div>
+                <div class="modal-footer">
+                    <button id="game-lose-close" type="button" class="btn btn-secondary"><a href="game.html">Try
+                            Again?</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
         <div class="row">
             <div id="thank-you" class="col-12">
                 <h5>Thanks For Playing!!!</h5>

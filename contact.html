@@ -9,6 +9,13 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Match2Kidz</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_t7Eqsr6kbYRM3u1cedtBW");
+            
+        })();
+    </script>
 </head>
 
 <body>
@@ -26,18 +33,49 @@
                     <ul id="navbar-list" class="
                     navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="game.html">Game</a>
+                        </li>
+                        <li class="nav-item active">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
+
 
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-   
+    <!--got the form from the walkthrough project with the code institute-->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 hr-center">
+                <form  id="feed-back-form" onsubmit="return sendMail(this);" method="POST">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
+                        required />
+                    <textarea rows="5" name="feedback" class="form-control" id="feedback"
+                        placeholder="Please leave us your feedback..." required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Send Feedback</button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+    </section>
+
     <footer>
         <div class="row">
             <div id="thank-you" class="col-12">
@@ -70,6 +108,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/email.js"></script>
 </body>
 
 </html>
