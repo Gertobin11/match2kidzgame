@@ -30,6 +30,11 @@ body {
     text-align: center;
 }
 
+/* code to hide the cards which are not in the game at the moment */
+.hidden {
+    display: none;
+}
+
 /* Navbar stylings */
 
 #brandlogo {

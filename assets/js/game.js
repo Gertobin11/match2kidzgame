@@ -48,21 +48,44 @@ let gameWon = false;
 
 //adding event listeners to the buttons to trigger the selected games
 
+//easy game buttons
 document.getElementById("easy").addEventListener("click", easyGameStart);
-document.getElementById("modal-easy").addEventListener("click", easyGameStart);
-document.getElementById("modal-easy-lose").addEventListener("click", easyGameStart);
+document.getElementById("modal-easy").addEventListener("click", function() {
+    $("#game-won").modal("hide");
+    easyGameStart();
+}
+);
+document.getElementById("modal-easy-lose").addEventListener("click", function() {
+    $("#game-lost").modal("hide");
+    easyGameStart();
+}
+);
 
+//medium game buttons
 document.getElementById("medium").addEventListener("click", mediumGameStart);
-document.getElementById("modal-medium").addEventListener("click", mediumGameStart);
-document.getElementById("modal-medium-lose").addEventListener("click", mediumGameStart);
+document.getElementById("modal-medium").addEventListener("click", function() {
+    $("#game-won").modal("hide");
+    mediumGameStart();
+}
+);
+document.getElementById("modal-medium-lose").addEventListener("click", function() {
+    $("#game-lost").modal("hide");
+    mediumGameStart();
+}
+);
 
+//hardGame buttons
 document.getElementById("hard").addEventListener("click", hardGameStart);
-document.getElementById("modal-hard").addEventListener("click", hardGameStart);
+document.getElementById("modal-hard").addEventListener("click", function() {
+    $("#game-won").modal("hide");
+    hardGameStart();
+}
+);
 document.getElementById("modal-hard-lose").addEventListener("click", function() {
     $("#game-lost").modal("hide");
-    hardGameStart()
+    hardGameStart();
 }
-    );
+);
 
 
 // declaring a variable to the cards
