@@ -498,6 +498,25 @@ footer {
 }
 
 
+/* styling for the contact page*/
+
+.container-contact {
+    margin: 0 auto;
+    width: 65%;
+    height: 300px;
+    min-width: 250px; 
+    margin-top: 40px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Finger Paint', cursive;
+}
+
+h1 i {
+    color: gold;
+}
+
 
 /* hover css , took the below button hover effects from https://ianlunn.github.io/Hover/*/
 
