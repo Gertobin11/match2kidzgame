@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Kranky&family=Mystery+Quest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kranky&family=Mystery+Quest&family=Finger+Paint&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
 
 /*general stylings*/
 
@@ -38,7 +40,7 @@ body {
 /* Navbar stylings */
 
 #brandlogo {
-    font-family: 'Kranky', cursive;
+    font-family: 'Finger Paint', cursive;
     color: white;
     font-weight: 600;
     font-size: 1.9em;
@@ -87,10 +89,9 @@ body {
 /* title styling */
 
 #title {
-    font-family: 'Kranky', cursive;
+    font-family: 'Finger Paint', cursive;
     color: white;
     font-weight: 600;
-    text-decoration: underline;
     text-decoration-color: gold;
     margin-top: 20px;
 }
@@ -99,6 +100,8 @@ body {
     margin-top: 20px;
     margin-bottom: 35px;
     font-size: 2em;
+    font-family: 'Finger Paint', cursive;
+    text-decoration: none;
 }
 
 .fa-puzzle-piece:before {
@@ -131,22 +134,23 @@ h3 {
     margin-bottom: 35px;
     font-size: 2em;
     color: white;
+    font-family: 'Finger Paint', cursive;
 }
 
 .container h4 {
     margin-bottom: 25px;
-    font-family: 'Kranky', cursive;
+    font-family: 'Finger Paint', cursive;
     color: white;
 }
 
 #how-to-play {
-    width: 140px;
+    width: 180px;
     background-color: white;
     color: blue;
     display: block;
     margin: auto;
     margin-top: 15px;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     height: 45px;
     font-size: 0.9em;
 }
@@ -156,13 +160,13 @@ h3 {
 }
   /* found a cool outline trick on https://stackoverflow.com/questions/57464935/font-outline-using-only-css */
 #go-to-game {
-    width: 140px;
+    width: 180px;
     background-color: darkgreen;
     color: darkorange;
     display: block;
     margin: auto;
     margin-top: 15px;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     text-shadow: 0 0 1px darkorange, 0 0 1px darkorange, 0 0 1px darkorange, 0 0 1px darkorange;
     height: 45px;
     font-size: 0.9em;
@@ -173,13 +177,13 @@ h3 {
 }
 
 #contact-us {
-    width: 140px;
+    width: 180px;
     background-color: gold;
     color: black;
     display: block;
     margin: auto;
     margin-top: 15px;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
     height: 45px;
     font-size: 0.9em;
@@ -252,11 +256,11 @@ a, a:hover, a:focus, a:active {
 
 #easy {
     display: block;
-    width: 140px;
+    width: 180px;
     margin: auto;
     margin-top: 15px;
     font-size: 0.9em;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     background-color: white;
     color: blue;
 }
@@ -267,11 +271,11 @@ a, a:hover, a:focus, a:active {
 
 #medium {
     display: block;
-    width: 140px;
+    width: 180px;
     margin: auto;
     margin-top: 15px;
     font-size: 0.9em;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     background-color: darkgreen;
     color: darkorange;
 }
@@ -281,11 +285,11 @@ a, a:hover, a:focus, a:active {
 
 #hard {
     display: block;
-    width: 140px;
+    width: 180px;
     margin: auto;
     margin-top: 15px;
     font-size: 0.9em;
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     background-color: gold;
     color: black;
 }
@@ -320,7 +324,7 @@ footer {
 }
 
 #thank-you h5 {
-    font-family: 'Kranky', cursive;
+    font-family: 'Finger Paint', cursive;
     margin-top: 20px;
 }
 
@@ -344,7 +348,7 @@ footer {
     margin: auto;
     background-color: blue;
     color: white;
-    font-family: 'Kranky', cursive;
+    font-family: 'Finger Paint', cursive;
     border: 3px solid gold;
 }
 
@@ -371,6 +375,7 @@ footer {
     color:darkorange;
     font-size: 1.3em;
     margin: 15px 0px 15px 0px;
+    font-family: 'Finger Paint', cursive;
 }
 
 .modal-footer {
@@ -390,7 +395,7 @@ footer {
 
 /* adding styling to the buttons on the game won modal */
 #modal-easy {
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     background-color: white;
     color: blue;
 }
@@ -400,7 +405,7 @@ footer {
 }
 
 #modal-medium {
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     background-color: darkgreen;
     color: darkorange;
 }
@@ -411,7 +416,7 @@ footer {
 
 
 #modal-hard {
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     background-color: gold;
     color: black;
 }
@@ -422,7 +427,7 @@ footer {
 
 
 #modal-home {
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     background-color: black;
     color: lightseagreen;
 }
@@ -438,7 +443,7 @@ footer {
 
 /* stylings for the modal pop up when you lose */
 #modal-easy-lose {
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     background-color: white;
     color: blue;
 }
@@ -448,7 +453,7 @@ footer {
 }
 
 #modal-medium-lose {
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     background-color: darkgreen;
     color: darkorange;
 }
@@ -459,7 +464,7 @@ footer {
 
 
 #modal-hard-lose {
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     background-color: gold;
     color: black;
 }
@@ -470,7 +475,7 @@ footer {
 
 
 #modal-home-lose {
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Finger Paint', cursive;
     background-color: black;
     color: lightseagreen;
 }

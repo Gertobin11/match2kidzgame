@@ -40,7 +40,7 @@
         <h3><i class="fas fa-puzzle-piece"></i>Match All The Cards! <i class="fas fa-puzzle-piece"></i></h3>
         <!--Giving the user an option of difficulty by having the 3 buttons which will launch the game-->
         <div class="container">
-            <h4>Choose An Option!
+            <h4>Choose A Difficulty
                 <button type="button" class="btn btn-success hvr-sweep-to-right" id="easy">Easy</button>
                 <button type="button" class="btn btn-success hvr-sweep-to-top" id="medium">Medium</button>
                 <button type="button" class="btn btn-success hvr-sweep-to-left" id="hard">Hard</button>
@@ -125,13 +125,13 @@
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel"><i class="far fa-laugh-beam"></i> Congradulations!!! <i class="far fa-laugh-beam"></i></h5>
       </div>
-      <div class="modal-body">
-          <h6>You have successfully completes the game.</h6>
+      <div class="modal-body hr hr-center">
+          <h6>You have successfully completed the game.</h6>
           <p>Choose an option from below to continue.</p>
           <button type="button" id="modal-easy" class="btn btn-success hvr-sweep-to-right">Easy</button>
           <button type="button" id="modal-medium" class="btn btn-success hvr-sweep-to-top">Medium</button>
           <button type="button" id="modal-hard" class="btn btn-success hvr-sweep-to-left">Hard</button>
-          <button type="button" id="modal-home" class="btn btn-success">Home</button>
+          <a href="index.html"><button type="button" id="modal-home" class="btn btn-success">Home</button></a>
       </div>
       <div class="modal-footer">
         <button id="game-win-close" type="button" class="btn btn-secondary"><a href="game.html">Play Again?</a></button>
@@ -148,13 +148,13 @@
       <div class="modal-header">
         <h5 class="modal-title" id="game-lost-modal"><i class="fas fa-sad-cry"></i> Sorry Time Ran Out !!! <i class="fas fa-sad-cry"></i></h5>
       </div>
-      <div class="modal-body">
+      <div class="modal-body hr-center">
           <h6>Better Luck Next Time</h6>
           <p>Choose an option from below to continue.</p>
           <button type="button" id="modal-easy-lose" class="btn btn-success hvr-sweep-to-right">Easy</button>
           <button type="button" id="modal-medium-lose" class="btn btn-success hvr-sweep-to-top">Medium</button>
           <button type="button" id="modal-hard-lose" class="btn btn-success hvr-sweep-to-left">Hard</button>
-          <button type="button" id="modal-home-lose" class="btn btn-success">Home</button>
+          <a href="index.html"><button type="button" id="modal-home-lose" class="btn btn-success">Home</button></a>
       </div>
       <div class="modal-footer">
         <button id="game-lose-close" type="button" class="btn btn-secondary"><a href="game.html">Try Again?</a></button>
