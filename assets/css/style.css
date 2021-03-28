@@ -39,7 +39,7 @@ body {
 
 #brandlogo {
     font-family: 'Kranky', cursive;
-    color: whitesmoke;
+    color: white;
     font-weight: 600;
     font-size: 1.9em;
     text-decoration: underline;
@@ -55,12 +55,12 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: whitesmoke;
+    color: white;
     font-size: 1.5em;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    color: whitesmoke;
+    color: white;
 }
 
 .active {
@@ -73,14 +73,14 @@ body {
 }
 
 .navbar-light .navbar-toggler {
-    border: 2px solid whitesmoke;
+    border: 2px solid white;
 }
 
 .navbar-light .navbar-toggler:focus {
     box-shadow: none;
     outline-style: solid;
     outline-width: 3px;
-    outline-color: whitesmoke;
+    outline-color: white;
     border-radius: 0;
 }
 
@@ -88,7 +88,7 @@ body {
 
 #title {
     font-family: 'Kranky', cursive;
-    color: whitesmoke;
+    color: white;
     font-weight: 600;
     text-decoration: underline;
     text-decoration-color: gold;
@@ -130,18 +130,18 @@ h3 {
     margin-top: 20px;
     margin-bottom: 35px;
     font-size: 2em;
-    color: whitesmoke;
+    color: white;
 }
 
 .container h4 {
     margin-bottom: 25px;
     font-family: 'Kranky', cursive;
-    color: whitesmoke;
+    color: white;
 }
 
 #how-to-play {
     width: 140px;
-    background-color: whitesmoke;
+    background-color: white;
     color: blue;
     display: block;
     margin: auto;
@@ -152,7 +152,7 @@ h3 {
 }
 
 #how-to-play:hover {
-    color: whitesmoke;
+    color: white;
 }
   /* found a cool outline trick on https://stackoverflow.com/questions/57464935/font-outline-using-only-css */
 #go-to-game {
@@ -245,7 +245,7 @@ a, a:hover, a:focus, a:active {
 }
 
 #timer-span {
-    color: whitesmoke;
+    color: white;
 }
 
 /* styling of the difficulty buttons */
@@ -257,12 +257,12 @@ a, a:hover, a:focus, a:active {
     margin-top: 15px;
     font-size: 0.9em;
     font-family: 'Mystery Quest', cursive;
-    background-color: whitesmoke;
+    background-color: white;
     color: blue;
 }
 
 #easy:hover {
-    color: whitesmoke;
+    color: white;
 }
 
 #medium {
@@ -299,7 +299,7 @@ a, a:hover, a:focus, a:active {
 
 footer {
     background-color: transparent;
-    color: whitesmoke;
+    color: white;
     margin-top: 60px;
     bottom: 0;
 }
@@ -338,29 +338,39 @@ footer {
 
 /* modal stylng */
 
+
 .modal-header {
     width: 100%;
     margin: auto;
     background-color: blue;
-    color: whitesmoke;
+    color: white;
     font-family: 'Kranky', cursive;
     border: 3px solid gold;
 }
 
 .modal-header h5 {
     font-weight: 600;
+    margin: 0 auto;
+    font-size: 1.6em;
+}
+
+.modal-header h5 i {
+    color: gold;
 }
 
 .modal-body {
-    margin: 0 auto;
-    background-color: whitesmoke;
+    background-color: white;
     color: blue;
     font-family: 'Mystery Quest', cursive;
+    width: 100%;
+    border: 3px solid gold;
 }
 
 
 .modal-body h6 {
     color:darkorange;
+    font-size: 1.3em;
+    margin: 15px 0px 15px 0px;
 }
 
 .modal-footer {
@@ -370,7 +380,7 @@ footer {
 
 .btn-secondary {
     color: darkorange;
-    background-color: whitesmoke;
+    background-color: white;
     border-color: darkorange;
 }
 /* got the code from https://jsfiddle.net/cq9gm0jn/  */
@@ -381,12 +391,12 @@ footer {
 /* adding styling to the buttons on the game won modal */
 #modal-easy {
     font-family: 'Mystery Quest', cursive;
-    background-color: whitesmoke;
+    background-color: white;
     color: blue;
 }
 
 #modal-easy:hover {
-    color: whitesmoke;
+    color: white;
 }
 
 #modal-medium {
@@ -429,12 +439,12 @@ footer {
 /* stylings for the modal pop up when you lose */
 #modal-easy-lose {
     font-family: 'Mystery Quest', cursive;
-    background-color: whitesmoke;
+    background-color: white;
     color: blue;
 }
 
 #modal-easy-lose:hover {
-    color: whitesmoke;
+    color: white;
 }
 
 #modal-medium-lose {
