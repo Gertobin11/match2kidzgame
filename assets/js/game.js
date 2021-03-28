@@ -46,12 +46,26 @@ function hardGameStart() {
 // creating a variable to trigger the reset timer
 let gameWon = false;
 
+//adding event listeners to the buttons to trigger the selected games
+
 document.getElementById("easy").addEventListener("click", easyGameStart);
+document.getElementById("modal-easy").addEventListener("click", easyGameStart);
+document.getElementById("modal-easy-lose").addEventListener("click", easyGameStart);
 
 document.getElementById("medium").addEventListener("click", mediumGameStart);
+document.getElementById("modal-medium").addEventListener("click", mediumGameStart);
+document.getElementById("modal-medium-lose").addEventListener("click", mediumGameStart);
 
 document.getElementById("hard").addEventListener("click", hardGameStart);
+document.getElementById("modal-hard").addEventListener("click", hardGameStart);
+document.getElementById("modal-hard-lose").addEventListener("click", function() {
+    $("#game-lost").modal("hide");
+    hardGameStart()
+}
+    );
 
+
+// declaring a variable to the cards
 let cards = document.getElementsByClassName("match-card");
 
 //declaring variables and an array to put values on the selected cards and push them into an array
