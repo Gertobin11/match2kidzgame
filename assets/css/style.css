@@ -211,6 +211,10 @@ a, a:hover, a:focus, a:active {
 
 /* gameboard and card stylings */
 
+#game-area {
+    flex: 1;
+}
+
 .match-game {
     border: none;
     display: flex;
@@ -308,12 +312,18 @@ a, a:hover, a:focus, a:active {
 
 /* footer stylings */
 
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
 
 footer {
     background-color: transparent;
     color: white;
     margin-top: 60px;
     bottom: 0;
+    top: auto;
 }
 
 .row {
@@ -506,6 +516,7 @@ footer {
     height: 300px;
     min-width: 250px; 
     margin-top: 40px;
+    flex: 1;
 }
 
 h1 {
@@ -717,5 +728,11 @@ footer {
     height: calc(25% - 10px);
     width : calc(33.33% - 10px);
     position: relative;
+}
+}
+
+@media (max-width: 500px) {
+#timer h3 {
+    font-size: 1.4em;
 }
 }
