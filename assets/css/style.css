@@ -39,6 +39,10 @@ body {
     display: none;
 }
 
+#opaque-layer {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 /* Navbar stylings */
 
 #brandlogo {
