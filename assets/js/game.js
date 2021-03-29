@@ -1,93 +1,5 @@
 //I will be using a mix of both javascript and jQuery for this as I feel more competent doing certain things in each
 
-// adding script to hide the memory game until called for
-$(document).ready(function () {
-    $("#match-game").hide();
-})
-//adding script to start my easy game mode
-let easyGame = document.getElementById("easy");
-
-//starts easy game
-function easyGameStart() {
-    gameWon = false
-    shuffle();
-    $("#match-game").show();
-    selectedCards = [];
-    matchedPairs = [];
-    lockBoard = false;
-    $("#title").hide();
-    easyGameTimer();
-}
-
-//starts medium game
-function mediumGameStart() {
-    gameWon = false
-    shuffle();
-    $("#match-game").show();
-    selectedCards = [];
-    matchedPairs = [];
-    lockBoard = false;
-    $("#title").hide();
-    mediumGameTimer();
-}
-
-//starts hard game
-function hardGameStart() {
-    gameWon = false
-    shuffle();
-    $("#match-game").show();
-    selectedCards = [];
-    matchedPairs = [];
-    lockBoard = false;
-    $("#title").hide();
-    hardGameTimer();
-}
-
-// creating a variable to trigger the reset timer
-let gameWon = false;
-
-//adding event listeners to the buttons to trigger the selected games
-
-//easy game buttons
-document.getElementById("easy").addEventListener("click", easyGameStart);
-document.getElementById("modal-easy").addEventListener("click", function() {
-    $("#game-won").modal("hide");
-    easyGameStart();
-}
-);
-document.getElementById("modal-easy-lose").addEventListener("click", function() {
-    $("#game-lost").modal("hide");
-    easyGameStart();
-}
-);
-
-//medium game buttons
-document.getElementById("medium").addEventListener("click", mediumGameStart);
-document.getElementById("modal-medium").addEventListener("click", function() {
-    $("#game-won").modal("hide");
-    mediumGameStart();
-}
-);
-document.getElementById("modal-medium-lose").addEventListener("click", function() {
-    $("#game-lost").modal("hide");
-    mediumGameStart();
-}
-);
-
-//hardGame buttons
-document.getElementById("hard").addEventListener("click", hardGameStart);
-document.getElementById("modal-hard").addEventListener("click", function() {
-    $("#game-won").modal("hide");
-    hardGameStart();
-}
-);
-document.getElementById("modal-hard-lose").addEventListener("click", function() {
-    $("#game-lost").modal("hide");
-    hardGameStart();
-}
-);
-
-
 // declaring a variable to the cards
 let cards = document.getElementsByClassName("match-card");
 
@@ -102,6 +14,86 @@ let matchedPairs = [];
 
 //adding a variable for locking the board as turning multiple cards was causing a bug got the technique from https://www.youtube.com/watch?v=ZniVgo8U7ek
 let lockBoard = false;
+
+
+// adding script to hide the memory game until called for
+$(document).ready(function () {
+    $("#match-game").hide();
+    $("#title").show();
+})
+//adding script to start my easy game mode
+let easyGame = document.getElementById("easy");
+
+//starts easy game
+function gameStart(difficulty) {
+    gameWon = false
+    shuffle();
+    $("#match-game").show();
+    selectedCards = [];
+    matchedPairs = [];
+    lockBoard = false;
+    $("#title").hide();
+    if(difficulty === easy){
+        gameTimer(easy);
+    }
+    else if(difficulty === medium) {
+        gameTimer(medium)
+    }
+    else if(difficulty === hard) {
+        gameTimer(hard)
+    }
+}
+// creating a variable to trigger the reset timer
+let gameWon = false;
+
+//adding event listeners to the buttons to trigger the selected games
+
+//easy game buttons
+document.getElementById("easy").addEventListener("click", function() {
+    gameStart(easy);}
+)
+    
+document.getElementById("modal-easy").addEventListener("click", function() {
+    $("#game-won").modal("hide");
+    gameStart(easy);
+}
+);
+document.getElementById("modal-easy-lose").addEventListener("click", function() {
+    $("#game-lost").modal("hide");
+    gameStart(easy);
+}
+);
+
+//medium game buttons
+document.getElementById("medium").addEventListener("click", function() {
+    gameStart(medium);}
+)
+document.getElementById("modal-medium").addEventListener("click", function() {
+    $("#game-won").modal("hide");
+    gameStart(medium);
+}
+);
+document.getElementById("modal-medium-lose").addEventListener("click", function() {
+    $("#game-lost").modal("hide");
+    gameStart(medium);
+}
+);
+
+//hardGame buttons
+document.getElementById("hard").addEventListener("click", function() {
+    gameStart(hard);}
+)
+document.getElementById("modal-hard").addEventListener("click", function() {
+    $("#game-won").modal("hide");
+    gameStart(hard);
+}
+);
+document.getElementById("modal-hard-lose").addEventListener("click", function() {
+    $("#game-lost").modal("hide");
+    gameStart(hard);
+}
+);
+
 
 //adding a function to turn the cards over
 function turnCard() {
@@ -181,41 +173,16 @@ function checkGameWon() {
 var counter;
 
     // I got the outline of the timer code from here https://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer and added it to a function
-    function easyGameTimer() {
-      let  count = 90;
-
-     counter = setInterval(timer, 1000);
-        function timer() {
-            count = count - 1;
-            
-             if (count <= 0) {
-                $("#game-lost").modal("show");
-                window.clearInterval(counter);
-                resetBoard();
-            }
-            document.getElementById("time-span").innerHTML = count + " secs";
-        }
-    }
-// function to set the medium difficulty to 60 seconds
-     function mediumGameTimer() {
-      let  count = 60;
-
-     counter = setInterval(timer, 1000);
-        function timer() {
-            count = count - 1;
-            
-             if (count <= 0) {
-                $("#game-lost").modal("show");
-                window.clearInterval(counter);
-                resetBoard();
-            }
-            document.getElementById("time-span").innerHTML = count + " secs";
-        }
-    }
-
-// function to set the medium difficulty to 60 seconds
-     function hardGameTimer() {
-      let  count = 30;
+    function gameTimer(time) {
+      if(time == easy) {
+          count = 90;
+      }
+      else if(time == medium) {
+          count = 60;
+      }
+      else  if(time == hard) {
+          count = 30;
+      }
 
      counter = setInterval(timer, 1000);
         function timer() {
