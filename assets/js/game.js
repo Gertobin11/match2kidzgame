@@ -3,28 +3,84 @@
 // declaring a variable to the cards
 let cards = document.getElementsByClassName("match-card");
 
+var counter;
+
 //declaring variables and an array to put values on the selected cards and push them into an array
 let turnedCard = false;
 let firstCard;
 let secondCard;
 let selectedCards = [];
 
-//creating an array for pushing the selected pairs to if they match so if matched pairs length === cards length game won
+//  an array for pushing the selected pairs to if they match so if matched pairs length === cards length game won
 let matchedPairs = [];
 
-//adding a variable for locking the board as turning multiple cards was causing a bug got the technique from https://www.youtube.com/watch?v=ZniVgo8U7ek
+// this will lock the board as turning multiple cards was causing a bug got the technique from https://www.youtube.com/watch?v=ZniVgo8U7ek
 let lockBoard = false;
 
+// a to trigger the reset timer
+let gameWon = false;
 
-// adding script to hide the memory game until called for
+// adding event listeners to the buttons to trigger the selected games
+
+// easy game buttons
+document.getElementById("easy").addEventListener("click", function() {
+    gameStart(easy);}
+)
+    
+document.getElementById("modal-easy").addEventListener("click", function() {
+    $("#game-won").modal("hide");
+    gameStart(easy);
+}
+);
+document.getElementById("modal-easy-lose").addEventListener("click", function() {
+    $("#game-lost").modal("hide");
+    gameStart(easy);
+}
+);
+
+// medium game buttons
+document.getElementById("medium").addEventListener("click", function() {
+    gameStart(medium);}
+)
+document.getElementById("modal-medium").addEventListener("click", function() {
+    $("#game-won").modal("hide");
+    gameStart(medium);
+}
+);
+document.getElementById("modal-medium-lose").addEventListener("click", function() {
+    $("#game-lost").modal("hide");
+    gameStart(medium);
+}
+);
+
+// hardGame buttons
+document.getElementById("hard").addEventListener("click", function() {
+    gameStart(hard);}
+)
+document.getElementById("modal-hard").addEventListener("click", function() {
+    $("#game-won").modal("hide");
+    gameStart(hard);
+}
+);
+document.getElementById("modal-hard-lose").addEventListener("click", function() {
+    $("#game-lost").modal("hide");
+    gameStart(hard);
+}
+);
+
+//  event listen for when the cards are chosen
+for (let i = 0; i < cards.length; i++) {
+    cards[i].addEventListener("click", turnCard);
+}
+
+// function to  hide the memory game until called for
 $(document).ready(function () {
     $("#match-game").hide();
     $("#title").show();
 })
-//adding script to start my easy game mode
-let easyGame = document.getElementById("easy");
 
-//starts easy game
+
+// starts the game
 function gameStart(difficulty) {
     gameWon = false
     shuffle();
@@ -43,59 +99,9 @@ function gameStart(difficulty) {
         gameTimer(hard)
     }
 }
-// creating a variable to trigger the reset timer
-let gameWon = false;
-
-//adding event listeners to the buttons to trigger the selected games
-
-//easy game buttons
-document.getElementById("easy").addEventListener("click", function() {
-    gameStart(easy);}
-)
-    
-document.getElementById("modal-easy").addEventListener("click", function() {
-    $("#game-won").modal("hide");
-    gameStart(easy);
-}
-);
-document.getElementById("modal-easy-lose").addEventListener("click", function() {
-    $("#game-lost").modal("hide");
-    gameStart(easy);
-}
-);
-
-//medium game buttons
-document.getElementById("medium").addEventListener("click", function() {
-    gameStart(medium);}
-)
-document.getElementById("modal-medium").addEventListener("click", function() {
-    $("#game-won").modal("hide");
-    gameStart(medium);
-}
-);
-document.getElementById("modal-medium-lose").addEventListener("click", function() {
-    $("#game-lost").modal("hide");
-    gameStart(medium);
-}
-);
-
-//hardGame buttons
-document.getElementById("hard").addEventListener("click", function() {
-    gameStart(hard);}
-)
-document.getElementById("modal-hard").addEventListener("click", function() {
-    $("#game-won").modal("hide");
-    gameStart(hard);
-}
-);
-document.getElementById("modal-hard-lose").addEventListener("click", function() {
-    $("#game-lost").modal("hide");
-    gameStart(hard);
-}
-);
 
 
-//adding a function to turn the cards over
+// a function to turn the cards over
 function turnCard() {
     if (this === firstCard) return;
     if (lockBoard) return;
@@ -130,12 +136,12 @@ function shuffle() {
 };
 
 
-//adding an event listen for when the cards are chosen
+//  event listen for when the cards are chosen
 for (let i = 0; i < cards.length; i++) {
     cards[i].addEventListener("click", turnCard);
 }
 
-//going to write a function to check for a match
+//  a function to check for a match
 function checkForMatch() {
     if (selectedCards[0].dataset.card === selectedCards[1].dataset.card) {
         matchedPairs.push(selectedCards[0], selectedCards[1]);
@@ -145,8 +151,6 @@ function checkForMatch() {
         selectedCards.length = 0;
         lockBoard = false;
         checkGameWon();
-
-
     }
     //added code for if it doesnt match it will return the cards and empty the selectedCars array, also had to ser a timeout fuction to make it work properly
     else {
@@ -160,6 +164,7 @@ function checkForMatch() {
     }
 }
 
+// a function to see if the player has won the game
 function checkGameWon() {
     if (matchedPairs.length === 12) {
         $("#game-won").modal("show");
@@ -168,9 +173,6 @@ function checkGameWon() {
         }
     }
 
-
-
-var counter;
 
     // I got the outline of the timer code from here https://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer and added it to a function
     function gameTimer(time) {
@@ -197,16 +199,16 @@ var counter;
         }
     }
 
-// creating a resetBoard function to tidy up the code
+// resetBoard function to make the game ready to play again
 
 function resetBoard() {
-        firstCard = null;
-        secondCard = null;
-        let cards = document.getElementsByClassName("match-card");
-        for (let i = 0; i < cards.length; i++) {
+    firstCard = null;
+    secondCard = null;
+    let cards = document.getElementsByClassName("match-card");
+    for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", turnCard);
         cards[i].classList.remove("flip");
-}
+    }
 }
 
 
