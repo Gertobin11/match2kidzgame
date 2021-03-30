@@ -82,7 +82,7 @@ $(document).ready(function () {
 
 // starts the game
 function gameStart(difficulty) {
-    gameWon = false
+    resetBoard();
     shuffle();
     $("#match-game").show();
     selectedCards = [];
@@ -166,13 +166,13 @@ function checkForMatch() {
 
 // a function to see if the player has won the game
 function checkGameWon() {
-    if (matchedPairs.length === 12) {
-        $("#game-won").modal("show");
-        window.clearInterval(counter);
-        resetBoard();
-        }
+    if(matchedPairs.length === 12) {
+        setTimeout(() => {
+            $("#game-won").modal("show");
+            window.clearInterval(counter);
+        }, 700);
     }
-
+}
 
     // I got the outline of the timer code from here https://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer and added it to a function
     function gameTimer(time) {
