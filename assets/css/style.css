@@ -317,9 +317,9 @@ a, a:hover, a:focus, a:active {
 /* footer stylings */
 
 .wrapper {
-    position: relative;
     display: flex;
     flex-direction: column;
+    min-height : 100vh;
 }
 
 footer {
@@ -327,7 +327,6 @@ footer {
     color: white;
     margin-top: 60px;
     bottom: 0;
-    top: auto;
 }
 
 .row {
@@ -670,48 +669,47 @@ h1 i {
 
 
 @media (min-width: 992px) {
-.navbar-expand-lg .navbar-collapse {
-    display: flex!important;
-    flex-basis: auto;
-    flex-flow: row-reverse;
-}
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        flex-flow: row-reverse;
+    }
 }
 
 
 
 @media (min-width: 500px) {
-.container {
-    width: 450px;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.7);
-    min-width: 250px;
-    display: flex; 
-    justify-content: center;  
-    align-items: center;
-    margin-top: 40px;
-
-}
-}
-
-@media (min-width: 500px) {
-#how-to-play {
-    margin: auto;
-    margin-top: 15px;
-}
+    .container {
+        width: 450px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.7);
+        min-width: 250px;
+        display: flex; 
+        justify-content: center;  
+        align-items: center;
+        margin-top: 40px;
+    }
 }
 
 @media (min-width: 500px) {
-#go-to-game {
-    margin: auto;
-    margin-top: 15px;
-}
+    #how-to-play {
+        margin: auto;
+        margin-top: 15px;
+    }
 }
 
 @media (min-width: 500px) {
-#contact-us {
-    margin: auto;
-    margin-top: 15px;
+    #go-to-game {
+        margin: auto;
+        margin-top: 15px;
+    }
 }
+
+@media (min-width: 500px) {
+    #contact-us {
+        margin: auto;
+        margin-top: 15px;
+    }
 }
 
 @media (min-width: 500px) {
@@ -721,22 +719,47 @@ footer {
 }
 
 @media (max-width: 500px) {
-.match-game {
-    width: 360px;
-    height: 480px;
-}
-}
-
-@media (max-width: 500px) {
-.match-card {
-    height: calc(25% - 10px);
-    width : calc(33.33% - 10px);
-    position: relative;
-}
+    .match-game {
+        width: 360px;
+        height: 480px;
+    }
 }
 
 @media (max-width: 500px) {
-#timer h3 {
+    .match-card {
+        height: calc(25% - 10px);
+        width : calc(33.33% - 10px);
+        position: relative;
+    }
+}
+
+@media (max-width: 500px) {
+    #timer h3 {
     font-size: 1.4em;
+    }
 }
+
+@media (max-width: 500px) {
+    #title h3 {
+        font-size: 1.4em;
+    }
 }
+
+@media (min-width:500px) {
+    #brandlogo {
+        font-size: 2.1em;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 500px) {
+     h3 {
+        font-size: 1.2em;
+    }
+}
+
