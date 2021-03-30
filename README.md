@@ -59,8 +59,8 @@ where that card is positioned.
 * Nicely styled with contrasting fonts and background images.
 * All the user actions to be tracked and shown on screen.
 
-### Design Choices.
-
+## Design Choices.
+---
 The design That I have chosen for this site is inspired by my kids preschool 
 and from all the games and books he they have.
 I have chosen a light blue background image with a fun type font to make it 
@@ -68,7 +68,7 @@ fun friendly and inviting.
 
 **Fonts**
 
-The fonts I chose for this project both came from Google Fonts. For the title and headings I have chosen the style of [Kranky](https://fonts.google.com/specimen/Kranky?preview.text_type=custom).
+The fonts I chose for this project both came from Google Fonts. For the title and headings I have chosen the style of [Finger Paint](https://fonts.google.com/specimen/Finger+Paint?preview.text_type=custom).
 For the pararagraphs and other cont I have chosen [Mystery Quest](https://fonts.google.com/specimen/Mystery+Quest?preview.text_type=custom).
 
 **Icons**
@@ -87,3 +87,51 @@ The colors I used were very basic, but kept with the theme and the background co
 
 For my wireframes I used [Balsamiq](https://balsamiq.com/wireframes/desktop/?os=win&gclid=CjwKCAiAxp-ABhALEiwAXm6IyV8YHkGFytprKnOnoi0yGg7QpPzpo7NLGpkNpaKh5Z5ypPynFnNNEhoCKOMQAvD_BwE#).
 I uploaded my wireframes to my assets folder and you can view them [here](https://github.com/Gertobin11/match2kidzgame/blob/master/assets/wireframes/wireframes.pdf)
+
+
+## Features
+---
+### Features that have been **implemented**
+* Clear Navigation that collapses into a button/ toggler when on smaller devices.
+* Colorful buttons for the user to click to find out how to play the game, start the game and go to the contact page.
+* Links to our social media accounts.
+* Responsive Game with a timer, with nice animations.
+
+### Features which will be added **later**
+* Add a new game mode i.e. tic tac toe
+* Add a leaderboard.
+
+## Technologies used
+---
+### Languages
+* [HTML](https://www.w3schools.com/html/html_intro.asp)
+* [CSS](https://www.w3schools.com/css/css_intro.asp)
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+### Libraries and Tools
+* [Bootstrap](https://getbootstrap.com/)
+* [JQuery](https://jquery.com/)
+* [Fontawesome](https://fontawesome.com/)
+* [Hover.css](https://ianlunn.github.io/Hover/)
+* [Google Fonts](https://fonts.google.com/)
+* [Git](https://git-scm.com/)
+* [Popper](https://popper.js.org/)
+* [Paint](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9)
+
+## Testing 
+---
+### Manual Testing
+The first round of testing I did was the testing of features and requirements that my users would have conveyed in the user stories segnment.
+I have catalogued all the testing that I did [here](testing.md). Also throughout the development process I have been continually testing and 
+checking for errors and bugs, where they have caused an issue, I have stated and fixed them in my [commits](https://github.com/Gertobin11/match2kidzgame/commits/master).
+
+### Testing with Validators
+#### HTML 
+The HTML files I've tested with [HTML Validator](https://validator.w3.org/) which gave me
+
+#### CSS
+The CSS file I've tested with with [CSS Validator](http://jigsaw.w3.org/css-validator/) which 
+
+#### Javascript
+The Javascript files Iv'e tested with 
+
