@@ -133,5 +133,6 @@ The HTML files I've tested with [HTML Validator](https://validator.w3.org/) whic
 The CSS file I've tested with with [CSS Validator](http://jigsaw.w3.org/css-validator/) which 
 
 #### Javascript
-The Javascript files Iv'e tested with 
+The Javascript files Iv'e tested with [JShint](https://jshint.com/) which threw up a few [errors](assets/images/test-images/jshint-result-after-fixing-semi-colon-issue.png) , which were mainly a few missing semi colons,
+but after I fixed that I had 5 undeclared variables which  4 were the arguments(easy,medium,hard,count) that I put into my function, So I declared those and I was left with an undeclared $ from using jQuery.
 
