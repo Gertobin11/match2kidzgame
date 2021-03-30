@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Mystery Quest', cursive;
-    background-image: url(../images/blue-boards-with-colourful-blocks.jpg);
+    background-image: url(../images/blue-kids-play-background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,6 +159,18 @@ h3 {
     width: 180px;
     background-color: white;
     color: blue;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    font-family: 'Finger Paint', cursive;
+    height: 45px;
+    font-size: 0.9em;
+}
+
+#how-to-play:focus {
+    width: 180px;
+    background-color: white;
+    color: white;
     display: block;
     margin: auto;
     margin-top: 15px;
