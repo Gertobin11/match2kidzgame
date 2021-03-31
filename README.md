@@ -86,7 +86,9 @@ The colors I used were very basic, but kept with the theme and the background co
 ### Wireframes
 
 For my wireframes I used [Balsamiq](https://balsamiq.com/wireframes/desktop/?os=win&gclid=CjwKCAiAxp-ABhALEiwAXm6IyV8YHkGFytprKnOnoi0yGg7QpPzpo7NLGpkNpaKh5Z5ypPynFnNNEhoCKOMQAvD_BwE#).
-I uploaded my wireframes to my assets folder and you can view them [here](https://github.com/Gertobin11/match2kidzgame/blob/master/assets/wireframes/wireframes.pdf)
+I uploaded my wireframes to my assets folder and you can view them [here](https://github.com/Gertobin11/match2kidzgame/blob/master/assets/wireframes/wireframes.pdf).
+My layout hs changed quite a bit in development but the main change is changing the game from 16 cards to 12 cards because in the mobile version 
+you had to scroll to be able t see cards and I thought that it wasnt user friendly.
 
 
 ## Features
@@ -117,6 +119,7 @@ I uploaded my wireframes to my assets folder and you can view them [here](https:
 * [Git](https://git-scm.com/)
 * [Popper](https://popper.js.org/)
 * [Paint](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9)
+* [EmailJS](https://www.emailjs.com/)
 
 ## Testing 
 ---
@@ -127,12 +130,16 @@ checking for errors and bugs, where they have caused an issue, I have stated and
 
 ### Testing with Validators
 #### HTML 
-The HTML files I've tested with [HTML Validator](https://validator.w3.org/) which gave me
+The HTML files I've tested with [HTML Validator](https://validator.w3.org/) which gave me 2 errors for index.html for putting my <a> elemnts outside the <button> elements , 
+you can see the results [here]().So I just deleted the button and changed the <a> role to button and this sorted the problems. After doing that edit  I Passed it through the validator again and it Passed
+ with no errors , you can see the result [here](). The next page I checked was my game.html page , but before I ran it I corrected any <button> 
+ which was inside an <a> ,
 
 #### CSS
 The CSS file I've tested with with [CSS Validator](http://jigsaw.w3.org/css-validator/) which 
 
 #### Javascript
 The Javascript files Iv'e tested with [JShint](https://jshint.com/) which threw up a few [errors](assets/images/test-images/jshint-result-after-fixing-semi-colon-issue.png) , which were mainly a few missing semi colons,
-but after I fixed that I had 5 undeclared variables which  4 were the arguments(easy,medium,hard,count) that I put into my function, So I declared those and I was left with an undeclared $ from using jQuery.
+but after I fixed that I had 5 undeclared variables which  4 were the arguments(easy,medium,hard,count) that I put into my function, So I declared those and I was left with an undeclared $ from using jQuery. I just econfigured 
+the JSHint to include JQuery and new Javascript features (es6) and it has shown no faults.
 

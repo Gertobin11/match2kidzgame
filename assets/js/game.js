@@ -5,10 +5,10 @@ let cards = document.getElementsByClassName("match-card");
 
 var counter;
 let count;
-let easy;
-let medium;          
-let hard;
-var $;
+let easy = 90;
+let medium = 60;
+let hard = 30;
+
 
 //declaring variables and an array to put values on the selected cards and push them into an array
 let turnedCard = false;
@@ -177,13 +177,13 @@ function checkGameWon() {
     // I got the outline of the timer code from here https://stackoverflow.com/questions/1191865/code-for-a-simple-javascript-countdown-timer and added it to a function
     function gameTimer(time) {
       if(time == easy) {
-          count = 90;
+          count = easy;
       }
       else if(time == medium) {
-          count = 60;
+          count = medium;
       }
       else  if(time == hard) {
-          count = 30;
+          count = hard;
       }
 
      counter = setInterval(timer, 1000);
