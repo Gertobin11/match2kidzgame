@@ -9,4 +9,4 @@ Lastly I tested the site for the user stories and goals which I stated earlier a
 
 ## Testing User Goals 
 * Finding out how to play the game. I opened up the site and pressed the "how to play" button, this brought up a modal which explained 
-how to launch the game and how to play it, closing this brought us back to the main window. Passed all tests.
+how to launch the game and how to play it, closing this brought us back to the main window. Passed all tests.[Screenshots]()

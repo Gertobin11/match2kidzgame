@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Kranky&family=Mystery+Quest&family=Finger+Paint&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
-
 
 /*general stylings*/
 
@@ -12,7 +10,7 @@
 
 body {
     font-family: 'Mystery Quest', cursive;
-    background-image: url(../images/blue-kids-play-background.png);
+    background-image: url(../images/blue-boards-with-colourful-blocks-opt.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
