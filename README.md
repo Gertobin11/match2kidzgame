@@ -62,9 +62,10 @@ where that card is positioned.
 ## Design Choices.
 ---
 The design That I have chosen for this site is inspired by my kids preschool 
-and from all the games and books he they have.
+and from all the games and books that  they have.
 I have chosen a light blue background image with a fun type font to make it 
-fun friendly and inviting.
+fun friendly and inviting. It will consist of 3 pages , A landing page, index.html, a game page game.html, and a contact page.
+The pages will consist a logo, navbar and a footer with the content of each page displayed between the navbar and the footer. 
 
 **Fonts**
 
