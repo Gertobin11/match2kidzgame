@@ -185,6 +185,7 @@ the JSHint to include JQuery and new Javascript features (es6) and it has shown 
 I ran my site through the validators when I deployed it on GitHub pages and it passed all the html tests on 1st go. [index](assets/images/test-images/deployed-index-test.jpg), 
 [game](assets/images/test-images/deployed-game-test.jpg), and [contact](assets/images/test-images/deployed-contact-test.jpg). I tested the css and the I got no errors or warnings with my code but I got 17 from the 
 bootstrap cdn.You can see the result [here](assets/images/test-images/deployed-css-test.jpg).
+I also carried out the same manual testing and found no errors on the deployed version.
 
 #### All the test images can be found in this [folder](https://github.com/Gertobin11/match2kidzgame/tree/master/assets/images/test-images)
 
