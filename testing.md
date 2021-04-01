@@ -25,6 +25,9 @@ difficulty. The try again button  and the play again button will bring you back 
 or any additional comments. I used EmailJS to send the site users details and feedback to my email. The alert when the email was sent also popped up.
 This all worked as it it is supposed to. [Screenshot 1](assets/images/test-images/contact-form-with-emailjs.jpg), [screenshot 2](assets/images/test-images/contact-form-success-alert.jpg),
 [screenshot 3](assets/images/test-images/email-response-from-feedback-form.jpg).
+* Navigation. The navigation was an important aspect of the site as it was developed for kids. The big buttons provided a clear and easy method 
+to navigate the site, I tested all the buttons and they linked correctly. The [navbar](assets/images/test-images/navbar-screen.jpg)also provided another means to get around the site 
+which was clear and worked correctly.
 
  ## Functionality 
  ---

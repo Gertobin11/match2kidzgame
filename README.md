@@ -1,5 +1,8 @@
 MATCH 2 KIDZ
 ===
+
+![Match2Kidz](assets/images/match2kidz-cardback.png)
+
 A simple game of matching two cards by type or by colour.
 By using HTML, CSS and Javascript to give an enjoyble experience
 to kids and families while also being very easy to use. 
@@ -30,7 +33,9 @@ ___
 
 The main goal of this project is to offer children an enjoyable experience 
 of a matching game while also developing their skills in problem solving, recognising patterns, seeing a card and remembering 
-where that card is positioned. 
+where that card is positioned. The game consists of a game board with 12 cards placed face down and the user can pick 2 cards at a time 
+to try and match them. If the user guesses correctly the cards stay turned, if not they get turned back face down. The user 
+has to match all the cards before the timer runs out.
 
 ### User Goals
 
@@ -46,6 +51,13 @@ where that card is positioned.
 * As a user I want to be able to contact the owner of the site for more information or to leave feedback.
 * As a user I want the site to be pleasant on the eye with nice backgrounds and appropriate typography.
 * As the parent of a user of the site I want the site to be easy to navigate, intuitive and easy for kids to learn.
+
+#### Below are some screenshots of the features/ designs put in place to satisfy user goals and stories
+
+![how to play modal](assets/images/test-images/how-to-play-modal.jpg)
+![email contact form](assets/images/test-images/contact-form-with-emailjs.jpg)
+![starting a game](assets/images/test-images/home-how-to-play-cursor.jpg)
+![replying a game](assets/images/test-images/game-won-modal.jpg)
 
 ### Site Owner Goals
 
