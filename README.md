@@ -132,17 +132,19 @@ checking for errors and bugs, where they have caused an issue, I have stated and
 ### Testing with Validators
 #### HTML 
 The HTML files I've tested with [HTML Validator](https://validator.w3.org/) which gave me 2 errors for index.html for putting my a tag elements outside the button elements , 
-you can see the results [here]().So I just deleted the button and changed the a role to button and this sorted the problems. After doing that edit  I Passed it through the validator again and it Passed
- with no errors , you can see the result [here](). The next page I checked was my game.html page , but before I ran it I corrected any button tag 
- which was inside an a tag ,After doing that it passed straight away. You can see the result [here](). The last page of html I passed through was my contact.html.  I had a section 
+you can see the results [here](assets/images/test-images/index-page-validation-fail.jpg).So I just deleted the button and changed the a role to button and this sorted the problems.
+ After doing that edit  I Passed it through the validator again and it Passed,with no errors , 
+ you can see the result [here](assets/images/test-images/index-page-validation-pass.jpg). The next page I checked was my game.html page , but before I ran it I corrected any button tag 
+ which was inside an a tag ,After doing that it passed straight away. You can see the result [here](assets/images/test-images/game-page-validation-pass.jpg). The last page of html I passed through was my contact.html.  I had a section 
  to provide a map for users but I found this unnessacery So i removed this section and made sure my cdns were matching the other pages.  It passed 
- and you can check the results [here]().
+ and you can check the results [here](assets/images/test-images/contact-page-validation-pass.jpg).
 
 #### CSS
 The CSS file I've tested with with [CSS Validator](http://jigsaw.w3.org/css-validator/) which Passed FIRST GO!!!
+You can see the result [here](assets/images/test-images/css-validator-pass.jpg)
 
 #### Javascript
 The Javascript files Iv'e tested with [JShint](https://jshint.com/) which threw up a few [errors](assets/images/test-images/jshint-result-after-fixing-semi-colon-issue.png) , which were mainly a few missing semi colons,
 but after I fixed that I had 5 undeclared variables which  4 were the arguments(easy,medium,hard,count) that I put into my function, So I declared those and I was left with an undeclared $ from using jQuery. I just econfigured 
-the JSHint to include JQuery and new Javascript features (es6) and it has shown no faults. You can see the last passed test [here]().
+the JSHint to include JQuery and new Javascript features (es6) and it has shown no faults. You can see the last passed test [here](assets/images/test-images/jshint-validation-pass.jpg).
 

@@ -9,11 +9,16 @@ Lastly I tested the site for the user stories and goals which I stated earlier a
 
 ## Testing User Goals and User Stories
 * Finding out how to play the game. I opened up the site and pressed the "how to play" button, this brought up a modal which explained 
-how to launch the game and how to play it, closing this brought us back to the main window. Passed the test.[Screenshots]()
+how to launch the game and how to play it, closing this brought us back to the main window. Passed the test.[Screenshot 1](assets/images/test-images/home-how-to-play-cursor.jpg),
+ [Screenshot 2](assets/images/test-images/how-to-play-modal.jpg)
 * Starting the game fast. Within 2 clicks of arriving at the site through index.html you will be in the game. The first click will be on the 
-play button , then this will take you to the choose your difficulty screen and after choosing your difficulty the game will start.[screenshots]() Passed the test.
+play button , then this will take you to the choose your difficulty screen and after choosing your difficulty the game will start. [Screenshot 1](assets/images/test-images/home-page.jpg),
+ [Screenshot 2](assets/images/test-images/choose-difficulty-screen.jpg), [screenshot 3](assets/images/test-images/game-on-screen.jpg) Passed the test.
 * Being able to restart or replay the game. When the game finishes a modal will pop up up , it will be different depending on the outcomes. The options in 
 these modals will be the same as you will have the 3 difficulty settings in the modal and a single click on these will start the game on the chosen 
-difficulty. The try again button  and the play again button will bring you back to the game screen to choose your difficulty.[screenshots]() Passed the test.
+difficulty. The try again button  and the play again button will bring you back to the game screen to choose your difficulty. [Screenshot 1](assets/images/test-images/game-won-modal.jpg),
+[screenshot 2](assets/images/test-images/game-over-modal.jpg). Passed the test.
 * Contacting the site owner. I set up a basic form with the users name, email address and a text area for the feedback they want to leave 
-or any additional comments. I used EmailJS to send the site users details and feedback to my email. The alert when the email was sent also popped up. this all worked as it it is supposed to.[screenshots]().
+or any additional comments. I used EmailJS to send the site users details and feedback to my email. The alert when the email was sent also popped up.
+This all worked as it it is supposed to. [Screenshot 1](assets/images/test-images/contact-form-with-emailjs.jpg), [screenshot 2](assets/images/test-images/contact-form-success-alert.jpg),
+ [screenshot 3](assets/images/test-images/email-response-from-feedback-form.jpg).
