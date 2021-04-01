@@ -181,6 +181,11 @@ The Javascript files Iv'e tested with [JShint](https://jshint.com/) which threw 
 but after I fixed that I had 5 undeclared variables which  4 were the arguments(easy,medium,hard,count) that I put into my function, So I declared those and I was left with an undeclared $ from using jQuery. I just econfigured 
 the JSHint to include JQuery and new Javascript features (es6) and it has shown no faults. You can see the last passed test [here](assets/images/test-images/jshint-validation-pass.jpg).
 
+#### Testing The Deployed Site
+I ran my site through the validators when I deployed it on GitHub pages and it passed all the html tests on 1st go. [index](assets/images/test-images/deployed-index-test.jpg), 
+[game](assets/images/test-images/deployed-game-test.jpg), and [contact](assets/images/test-images/deployed-contact-test.jpg). I tested the css and the I got no errors or warnings with my code but I got 17 from the 
+bootstrap cdn.You can see the result [here](assets/images/test-images/deployed-css-test.jpg).
+
 #### All the test images can be found in this [folder](https://github.com/Gertobin11/match2kidzgame/tree/master/assets/images/test-images)
 
 ## Deployment
