@@ -181,6 +181,8 @@ The Javascript files Iv'e tested with [JShint](https://jshint.com/) which threw 
 but after I fixed that I had 5 undeclared variables which  4 were the arguments(easy,medium,hard,count) that I put into my function, So I declared those and I was left with an undeclared $ from using jQuery. I just econfigured 
 the JSHint to include JQuery and new Javascript features (es6) and it has shown no faults. You can see the last passed test [here](assets/images/test-images/jshint-validation-pass.jpg).
 
+#### All the test images can be found in this [folder](https://github.com/Gertobin11/match2kidzgame/tree/master/assets/images/test-images)
+
 ## Deployment
 
 ### Steps taken when I deployed the website on github pages
