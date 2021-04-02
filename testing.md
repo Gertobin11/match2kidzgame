@@ -32,11 +32,14 @@ which was clear and worked correctly.
  ## Functionality 
  ---
  To test for functionality I basically started at the homepage (index.html) , and clicked on how to play the game and the modal appeared as 
- it was supposed to. Next I launched each gamemode (easy, medium and hard) and won the game on each difficulty and chose the various options 
+ it was supposed to. In the game itself when I clicked on a card it flipped over and stayed that way until I chose another card,
+ then if they matched they stayed showing the card face, if they did not match they flipped back over. 
+  Next I launched each gamemode (easy, medium and hard) and won the game on each difficulty and chose the various options 
  in the pop up modal. They all worked as required. Next to check if the timer was working as it should I launched each game and let the timer run 
  down, which upon reaching 0 the game over modal would pop up and I followed the links which all worked as intended. I also tried the contact page 
  where I entered details in the form and submitted it. I received the details through my email, as intended.
  The website functioned as intended, mainly because I was esting throughout which made the testing at the end alot smoother.
+
 
  ## Usability
  ---
