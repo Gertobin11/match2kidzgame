@@ -158,6 +158,10 @@ The first round of testing I did was the testing of features and requirements th
 I have catalogued all the testing that I did [here](testing.md). Also throughout the development process I have been continually testing and 
 checking for errors and bugs, where they have caused an issue, I have stated and fixed them in my [commits](https://github.com/Gertobin11/match2kidzgame/commits/master).
 
+<br> 
+
+[Manual Tests Here!!!](testing.md)
+
 ### Testing with Validators
 
 #### HTML 
